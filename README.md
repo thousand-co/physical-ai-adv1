@@ -1,4 +1,8 @@
-# 学習型色認識と接触把持によるCRANE+コンベヤ選別
+# physical-ai-adv1
+
+for final task
+
+## 学習型色認識と接触把持によるCRANE+コンベヤ選別
 
 GitHubでの管理対象と別PCでの環境再現は[GITHUB.md](GITHUB.md)を参照してください。
 
