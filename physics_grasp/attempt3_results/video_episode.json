@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "reward": 13.71293516600694,
+  "hold_fraction": 1.0,
+  "mean_hold_height_m": 0.10406943178471519,
+  "final_height_m": 0.10391335768595054,
+  "bilateral_contact_fraction": 1.0,
+  "duration_s": 3.6419999999998205,
+  "joint_velocity_roughness": 0.00011424698916630968,
+  "energy_proxy_j": 1.666536463453387,
+  "seed": 1000,
+  "friction": 0.7,
+  "mass_kg": 0.02
+}

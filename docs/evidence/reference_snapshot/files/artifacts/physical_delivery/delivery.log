@@ -1,0 +1,177 @@
+Prepared physical world, force controllers, CRANE+ URDF, and learned policy
+Starting >>> final_project_ros
+Finished <<< final_project_ros [1.02s]
+
+Summary: 1 package finished [1.30s]
+[INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2026-10-26-13-13-21-178529-3642482ea9d3-69157
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gzserver-1]: process started with pid [69165]
+[INFO] [robot_state_publisher-2]: process started with pid [69167]
+[INFO] [spawn_entity.py-3]: process started with pid [69169]
+[robot_state_publisher-2] [INFO] [1793020401.656663906] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1793020401.656773963] [robot_state_publisher]: got segment crane_plus_base
+[robot_state_publisher-2] [INFO] [1793020401.656780982] [robot_state_publisher]: got segment crane_plus_link1
+[robot_state_publisher-2] [INFO] [1793020401.656784477] [robot_state_publisher]: got segment crane_plus_link2
+[robot_state_publisher-2] [INFO] [1793020401.656787667] [robot_state_publisher]: got segment crane_plus_link3
+[robot_state_publisher-2] [INFO] [1793020401.656790600] [robot_state_publisher]: got segment crane_plus_link4
+[robot_state_publisher-2] [INFO] [1793020401.656793571] [robot_state_publisher]: got segment crane_plus_link_endtip
+[robot_state_publisher-2] [INFO] [1793020401.656796926] [robot_state_publisher]: got segment crane_plus_link_hand
+[robot_state_publisher-2] [INFO] [1793020401.656800270] [robot_state_publisher]: got segment world
+[gzserver-1] Gazebo multi-robot simulator, version 11.10.2
+[gzserver-1] Copyright (C) 2012 Open Source Robotics Foundation.
+[gzserver-1] Released under the Apache 2 License.
+[gzserver-1] http://gazebosim.org
+[gzserver-1] 
+[spawn_entity.py-3] [INFO] [1793020401.865515159] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-3] [INFO] [1793020401.865846741] [spawn_entity]: Loading entity published on topic robot_description
+[spawn_entity.py-3] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/qos.py:307: UserWarning: DurabilityPolicy.RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL is deprecated. Use DurabilityPolicy.TRANSIENT_LOCAL instead.
+[spawn_entity.py-3]   warnings.warn(
+[spawn_entity.py-3] [INFO] [1793020401.867498770] [spawn_entity]: Waiting for entity xml on robot_description
+[spawn_entity.py-3] [INFO] [1793020401.869259552] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-3] [INFO] [1793020401.869481273] [spawn_entity]: Waiting for service /spawn_entity
+[gzserver-1] Home directory not accessible: Permission denied
+[gzserver-1] Home directory not accessible: Permission denied
+[gzserver-1] ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+[gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+[gzserver-1] ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+[gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+[gzserver-1] ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+[gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+[gzserver-1] ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+[gzserver-1] ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+[gzserver-1] AL lib: (EE) ALCplaybackAlsa_open: Could not open playback device 'default': No such file or directory
+[gzserver-1] [1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[gzserver-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[gzserver-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m172.17.0.2[0m[1;32m
+[gzserver-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/home/ubuntu/final_pj/final_project_ros/ros2_ws/install/final_project_ros/share/final_project_ros/worlds/physical_delivery.world[0m[1;32m][0m[1;32m
+[gzserver-1] [1;31m[Err] [OpenAL.cc:84] [0m[1;31mUnable to open audio device[[0m[1;31mdefault[0m[1;31m]
+[gzserver-1]  Audio will be disabled.
+[spawn_entity.py-3] [INFO] [1793020402.372801086] [spawn_entity]: Calling service /spawn_entity
+[gzserver-1] [0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[gzserver-1] [0m[INFO] [1793020403.343719424] [camera.camera_controller]: Publishing camera info to [/camera/color/camera_info]
+[gzserver-1] [INFO] [1793020403.353577093] [box_contact_ros]: Publishing contact states to [/grasp/contacts]
+[gzserver-1] [INFO] [1793020403.365508958] [demo_camera.camera_controller]: Publishing camera info to [/demo_camera/color/camera_info]
+[gzserver-1] [INFO] [1793020403.376600001] [gazebo.gazebo_ros_state]: Publishing states of gazebo models at [/gazebo/model_states]
+[gzserver-1] [INFO] [1793020403.376935296] [gazebo.gazebo_ros_state]: Publishing states of gazebo links at [/gazebo/link_states]
+[spawn_entity.py-3] [INFO] [1793020403.421408450] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [crane_plus]
+[gzserver-1] [INFO] [1793020403.494113190] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+[gzserver-1] [INFO] [1793020403.498227301] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+[gzserver-1] [INFO] [1793020403.498344629] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+[gzserver-1] [INFO] [1793020403.500998262] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+[gzserver-1] [INFO] [1793020403.501826630] [gazebo_ros2_control]: Received urdf from param server, parsing...
+[gzserver-1] [INFO] [1793020403.501968794] [gazebo_ros2_control]: Loading parameter files /home/ubuntu/final_pj/final_project_ros/ros2_ws/src/final_project_ros/config/physical_controllers.yaml
+[gzserver-1] [INFO] [1793020403.513552563] [gazebo_ros2_control]: Loading joint: crane_plus_joint1
+[gzserver-1] [INFO] [1793020403.513655813] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1793020403.513668931] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1793020403.513678778] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1793020403.513686317] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1793020403.513693462] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1793020403.513760054] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1793020403.513774535] [gazebo_ros2_control]: Loading joint: crane_plus_joint2
+[gzserver-1] [INFO] [1793020403.513781378] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1793020403.513787669] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1793020403.513794174] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1793020403.513800551] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1793020403.513807105] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1793020403.513819227] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1793020403.513826941] [gazebo_ros2_control]: Loading joint: crane_plus_joint3
+[gzserver-1] [INFO] [1793020403.513833135] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1793020403.513839312] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1793020403.513976213] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1793020403.514075765] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1793020403.514084911] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1793020403.514109403] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1793020403.514118161] [gazebo_ros2_control]: Loading joint: crane_plus_joint4
+[gzserver-1] [INFO] [1793020403.514122982] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1793020403.514127101] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1793020403.514131096] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1793020403.514134538] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1793020403.514137980] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1793020403.514142898] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1793020403.514149498] [gazebo_ros2_control]: Loading joint: crane_plus_joint_hand
+[gzserver-1] [INFO] [1793020403.514153308] [gazebo_ros2_control]: 	State:
+[gzserver-1] [INFO] [1793020403.514156742] [gazebo_ros2_control]: 		 position
+[gzserver-1] [INFO] [1793020403.514160259] [gazebo_ros2_control]: 		 velocity
+[gzserver-1] [INFO] [1793020403.514163897] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1793020403.514167351] [gazebo_ros2_control]: 	Command:
+[gzserver-1] [INFO] [1793020403.514171274] [gazebo_ros2_control]: 		 effort
+[gzserver-1] [INFO] [1793020403.514223374] [resource_manager]: Initialize hardware 'crane_plus' 
+[gzserver-1] [INFO] [1793020403.514445786] [resource_manager]: Successful initialization of hardware 'crane_plus'
+[gzserver-1] [INFO] [1793020403.514518044] [resource_manager]: 'configure' hardware 'crane_plus' 
+[gzserver-1] [INFO] [1793020403.514525042] [resource_manager]: Successful 'configure' of hardware 'crane_plus'
+[gzserver-1] [INFO] [1793020403.514529844] [resource_manager]: 'activate' hardware 'crane_plus' 
+[gzserver-1] [INFO] [1793020403.514533255] [resource_manager]: Successful 'activate' of hardware 'crane_plus'
+[gzserver-1] [INFO] [1793020403.514631799] [gazebo_ros2_control]: Loading controller_manager
+[gzserver-1] [WARN] [1793020403.538096001] [gazebo_ros2_control]:  Desired controller update period (0.002 s) is slower than the gazebo simulation period (0.001 s).
+[gzserver-1] [INFO] [1793020403.538475356] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+[INFO] [spawn_entity.py-3]: process has finished cleanly [pid 69169]
+[INFO] [spawner-4]: process started with pid [69338]
+[gzserver-1] [INFO] [1793020403.943218033] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[spawner-4] [INFO] [1793020403.965723700] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gzserver-1] [INFO] [1793020403.966653007] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[gzserver-1] [INFO] [1793020403.966875377] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawner-4] [INFO] [1793020403.976207130] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[INFO] [spawner-4]: process has finished cleanly [pid 69338]
+[INFO] [spawner-5]: process started with pid [69374]
+[gzserver-1] [INFO] [1793020404.517766025] [controller_manager]: Loading controller 'crane_plus_arm_controller'
+[gzserver-1] [WARN] [1793020404.528937982] [crane_plus_arm_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[spawner-5] [INFO] [1793020404.539825281] [spawner_crane_plus_arm_controller]: [94mLoaded [1mcrane_plus_arm_controller[0m
+[gzserver-1] [INFO] [1793020404.540713153] [controller_manager]: Configuring controller 'crane_plus_arm_controller'
+[gzserver-1] [INFO] [1793020404.540966035] [crane_plus_arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gzserver-1] [WARN] [1793020404.541084486] [crane_plus_arm_controller]: 'ff_velocity_scale' parameters is not defined under 'gains.<joint_name>.' structure. Maybe you are using deprecated format 'ff_velocity_scale/<joint_name>'!
+[gzserver-1] [WARN] [1793020404.541292811] [crane_plus_arm_controller]: 'ff_velocity_scale' parameters is not defined under 'gains.<joint_name>.' structure. Maybe you are using deprecated format 'ff_velocity_scale/<joint_name>'!
+[gzserver-1] [WARN] [1793020404.541362851] [crane_plus_arm_controller]: 'ff_velocity_scale' parameters is not defined under 'gains.<joint_name>.' structure. Maybe you are using deprecated format 'ff_velocity_scale/<joint_name>'!
+[gzserver-1] [WARN] [1793020404.541407021] [crane_plus_arm_controller]: 'ff_velocity_scale' parameters is not defined under 'gains.<joint_name>.' structure. Maybe you are using deprecated format 'ff_velocity_scale/<joint_name>'!
+[gzserver-1] [INFO] [1793020404.541447315] [crane_plus_arm_controller]: Command interfaces are [effort] and state interfaces are [position velocity].
+[gzserver-1] [INFO] [1793020404.541516907] [crane_plus_arm_controller]: Using 'splines' interpolation method.
+[gzserver-1] [INFO] [1793020404.542461022] [crane_plus_arm_controller]: Controller state will be published at 50.00 Hz.
+[gzserver-1] [INFO] [1793020404.544136202] [crane_plus_arm_controller]: Action status changes will be monitored at 20.00 Hz.
+[spawner-5] [INFO] [1793020404.567377290] [spawner_crane_plus_arm_controller]: [92mConfigured and activated [1mcrane_plus_arm_controller[0m
+[INFO] [spawner-5]: process has finished cleanly [pid 69374]
+[INFO] [spawner-6]: process started with pid [69403]
+[gzserver-1] [INFO] [1793020405.015249495] [controller_manager]: Loading controller 'crane_plus_gripper_controller'
+[gzserver-1] [WARN] [1793020405.018797163] [crane_plus_gripper_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[spawner-6] [INFO] [1793020405.030295702] [spawner_crane_plus_gripper_controller]: [94mLoaded [1mcrane_plus_gripper_controller[0m
+[gzserver-1] [INFO] [1793020405.031164592] [controller_manager]: Configuring controller 'crane_plus_gripper_controller'
+[gzserver-1] [INFO] [1793020405.031253468] [crane_plus_gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gzserver-1] [WARN] [1793020405.031267043] [crane_plus_gripper_controller]: 'ff_velocity_scale' parameters is not defined under 'gains.<joint_name>.' structure. Maybe you are using deprecated format 'ff_velocity_scale/<joint_name>'!
+[gzserver-1] [INFO] [1793020405.031357071] [crane_plus_gripper_controller]: Command interfaces are [effort] and state interfaces are [position velocity].
+[gzserver-1] [INFO] [1793020405.031371485] [crane_plus_gripper_controller]: Using 'splines' interpolation method.
+[gzserver-1] [INFO] [1793020405.031643347] [crane_plus_gripper_controller]: Controller state will be published at 50.00 Hz.
+[gzserver-1] [INFO] [1793020405.032692355] [crane_plus_gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+[spawner-6] [INFO] [1793020405.039433820] [spawner_crane_plus_gripper_controller]: [92mConfigured and activated [1mcrane_plus_gripper_controller[0m
+[INFO] [spawner-6]: process has finished cleanly [pid 69403]
+[INFO] [gazebo_delivery_demo-7]: process started with pid [69445]
+[INFO] [physical_delivery-8]: process started with pid [69447]
+[gazebo_delivery_demo-7] [INFO] [1793020405.565288041] [gazebo_delivery_demo]: Learned RGB decision tree ready; Gazebo delivery demo: target_color=blue image_topic=/camera/color/image_raw min_contour_area=40.0
+[gazebo_delivery_demo-7] [INFO] [1793020405.664133443] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[physical_delivery-8] [INFO] [1793020405.666242595] [physical_delivery]: Physical delivery: initializing
+[physical_delivery-8] [INFO] [1793020405.686232921] [physical_delivery]: Physical delivery: moving_to_start
+[physical_delivery-8] [INFO] [1793020409.270885804] [physical_delivery]: Physical delivery: waiting_for_object
+[physical_delivery-8] [INFO] [1793020409.373093703] [physical_delivery]: Physical delivery: approaching_target
+[physical_delivery-8] [INFO] [1793020410.982488307] [physical_delivery]: Physical delivery: closing_gripper
+[physical_delivery-8] [INFO] [1793020413.295222703] [physical_delivery]: Physical delivery: lifting
+[physical_delivery-8] [INFO] [1793020415.104691489] [physical_delivery]: Physical delivery: holding
+[physical_delivery-8] [INFO] [1793020416.220249499] [physical_delivery]: Physical delivery: clearing_box_rim
+[physical_delivery-8] [INFO] [1793020418.547108825] [physical_delivery]: Physical delivery: transporting
+[physical_delivery-8] [INFO] [1793020425.767139962] [physical_delivery]: Physical delivery: lowering_into_box
+[physical_delivery-8] [INFO] [1793020428.076077216] [physical_delivery]: Physical delivery: releasing
+[gazebo_delivery_demo-7] [INFO] [1793020429.108238833] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[physical_delivery-8] [INFO] [1793020430.395107930] [physical_delivery]: Physical delivery: retracting
+[gzserver-1] [1;33m[Wrn] [Publisher.cc:135] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/physical_delivery/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[physical_delivery-8] [INFO] [1793020432.720776663] [physical_delivery]: Physical delivery: opening_after_retreat
+[physical_delivery-8] [INFO] [1793020434.530881451] [physical_delivery]: Physical delivery: verifying_delivery
+[physical_delivery-8] [INFO] [1793020436.143815665] [physical_delivery]: Physical delivery: done
+[physical_delivery-8] [INFO] [1793020437.537016569] [physical_delivery]: Evidence saved: /home/ubuntu/final_pj/final_project_ros/artifacts/physical_delivery/delivery.json
+[INFO] [physical_delivery-8]: process has finished cleanly [pid 69447]
+[INFO] [gazebo_delivery_demo-7]: sending signal 'SIGINT' to process[gazebo_delivery_demo-7]
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[INFO] [gzserver-1]: sending signal 'SIGINT' to process[gzserver-1]
+[robot_state_publisher-2] [INFO] [1793020437.834687534] [rclcpp]: signal_handler(signum=2)
+[gzserver-1] [0m[1;33m[0m[1;33m[0m[1;33m[Wrn] [Publisher.cc:135] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/physical_delivery/physics/contacts[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 69167]
+[INFO] [gazebo_delivery_demo-7]: process has finished cleanly [pid 69445]
+[INFO] [gzserver-1]: process has finished cleanly [pid 69165]
+[gzserver-1] [0m[1;32m[0m[1;32m[0m[1;36m[0m[1;32m[0m
+[gzserver-1] [0m[1;33m[0m[1;33m[0m[1;33m[0m[1;31m[0m
+Verified physical delivery: /home/ubuntu/final_pj/final_project_ros/artifacts/physical_delivery/delivery.json

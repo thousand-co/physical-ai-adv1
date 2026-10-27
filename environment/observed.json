@@ -1,0 +1,27 @@
+{
+  "description": "Observed environment; not a portable container or complete dependency lock.",
+  "operating_system": "Ubuntu 22.04.5 LTS",
+  "python": "3.10.12",
+  "ros_distribution": "humble",
+  "python_packages": {
+    "numpy": "1.24.4",
+    "scipy": "1.8.0",
+    "opencv-python-headless": "4.10.0.84",
+    "Pillow": "9.0.1",
+    "reportlab": "3.6.8",
+    "PyYAML": "5.4.1"
+  },
+  "debian_packages": [
+    "ffmpeg=7:4.4.2-0ubuntu0.22.04.1",
+    "gazebo=11.10.2+dfsg-1",
+    "python3-opencv=4.5.4+dfsg-9ubuntu4",
+    "python3-scipy=1.8.0-1exp2ubuntu1",
+    "ros-humble-gazebo-ros-pkgs=3.7.0-1jammy.20250114.181732",
+    "ros-humble-gazebo-ros2-control=0.4.10-1jammy.20250117.171426",
+    "ros-humble-ros2-controllers=2.41.0-1jammy.20250117.173343"
+  ],
+  "external_crane": {
+    "commit": "19c1d6069126cd27488bf1bbefd410704bfc515d",
+    "note": "HEAD read from local checkout; local modifications were not audited."
+  }
+}

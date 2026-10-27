@@ -1,0 +1,795 @@
+{
+  "captured_at_utc": "2026-10-26T14:02:11.504389+00:00",
+  "python_at_capture": "3.10.12 (main, Jan 17 2025, 14:35:34) [GCC 11.4.0]",
+  "platform_at_capture": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "scope": "Selected code/configuration/JSON/logs. Geometry is hashed but not copied. Dependencies and videos are not included. Capture environment is not proof of the historical execution environment.",
+  "files": [
+    {
+      "source": "FINAL_REPORT.md",
+      "copy": "files/FINAL_REPORT.md",
+      "bytes": 5180,
+      "sha256": "a0999ddb73c99dce355f704ba75c299f30e3b6e3d3139a4298bae65cd59c26e3"
+    },
+    {
+      "source": "LEGACY_DEMO.md",
+      "copy": "files/LEGACY_DEMO.md",
+      "bytes": 9509,
+      "sha256": "e9a21cdebcb53266d96bf1947cdc7aa7f36a3dab5931b650222c9e1d1c97f095"
+    },
+    {
+      "source": "PHYSICAL_DELIVERY.md",
+      "copy": "files/PHYSICAL_DELIVERY.md",
+      "bytes": 6295,
+      "sha256": "7f01607e496be3cf617a7badf62b6025bb7eb86f01c320cbcf1d085ce7b0f32f"
+    },
+    {
+      "source": "README.md",
+      "copy": "files/README.md",
+      "bytes": 2817,
+      "sha256": "79e768be701bb5daf88bbd116992325218cb98693687b64163122672c8f14867"
+    },
+    {
+      "source": "artifacts/physical_delivery/before_release_clearance_fix/delivery.json",
+      "copy": "files/artifacts/physical_delivery/before_release_clearance_fix/delivery.json",
+      "bytes": 120573,
+      "sha256": "3f46236fe755e39b66e23dd51b3b57806c2b72faf0c20d9051a18788571375f3"
+    },
+    {
+      "source": "artifacts/physical_delivery/before_release_clearance_fix/seed1000.json",
+      "copy": "files/artifacts/physical_delivery/before_release_clearance_fix/seed1000.json",
+      "bytes": 121788,
+      "sha256": "1fe14373845e14141c82db4863a2649adb76a2a4253c5086dc21cf267125db8b"
+    },
+    {
+      "source": "artifacts/physical_delivery/before_release_clearance_fix/seed1001.json",
+      "copy": "files/artifacts/physical_delivery/before_release_clearance_fix/seed1001.json",
+      "bytes": 127273,
+      "sha256": "f0fb30d68959614d81c32a5dd111c4f19afb3998c96a8039ccd9e29db904acf8"
+    },
+    {
+      "source": "artifacts/physical_delivery/delivery.json",
+      "copy": "files/artifacts/physical_delivery/delivery.json",
+      "bytes": 130377,
+      "sha256": "46744083a850406a1e0b9c84d89abbc6b3f5b7b264a409adc7683b4769c8c5df"
+    },
+    {
+      "source": "artifacts/physical_delivery/delivery.log",
+      "copy": "files/artifacts/physical_delivery/delivery.log",
+      "bytes": 18469,
+      "sha256": "e326ba39cec4e597330883c238940cea40d6ac2cc9e120843d6e36715e421a0b"
+    },
+    {
+      "source": "artifacts/physical_delivery/development_logs/grasp_training.log",
+      "copy": "files/artifacts/physical_delivery/development_logs/grasp_training.log",
+      "bytes": 4982,
+      "sha256": "9fc89a7358212ad7ed882985ece009fa0c063ffb2775fc22bb57761837fa8df2"
+    },
+    {
+      "source": "artifacts/physical_delivery/development_logs/grasp_training2.log",
+      "copy": "files/artifacts/physical_delivery/development_logs/grasp_training2.log",
+      "bytes": 5145,
+      "sha256": "a59e1146093318547ff8f7341fc5a69543bd431b0c939739ee2ed08e5af76cf2"
+    },
+    {
+      "source": "artifacts/physical_delivery/development_logs/grasp_training3.log",
+      "copy": "files/artifacts/physical_delivery/development_logs/grasp_training3.log",
+      "bytes": 4908,
+      "sha256": "04b3746ce7c7acce95ee5bd33bb709cad517cb1c3c1208cc6e255ce6aa706671"
+    },
+    {
+      "source": "artifacts/physical_delivery/development_logs/grasp_training4.log",
+      "copy": "files/artifacts/physical_delivery/development_logs/grasp_training4.log",
+      "bytes": 2610,
+      "sha256": "da819fdf79d3e84ddcaaf234473b625524138fd235fea6b3fc03ab9074460d94"
+    },
+    {
+      "source": "artifacts/physical_delivery/development_logs/physical_delivery1.log",
+      "copy": "files/artifacts/physical_delivery/development_logs/physical_delivery1.log",
+      "bytes": 98830,
+      "sha256": "bb3cd08f66a897937a429c5df6d862e8a957587a5b650e7f42ba6538ef9516ca"
+    },
+    {
+      "source": "artifacts/physical_delivery/development_logs/physical_delivery2.log",
+      "copy": "files/artifacts/physical_delivery/development_logs/physical_delivery2.log",
+      "bytes": 19982,
+      "sha256": "63fa64704630ad1bdb99d811e419ceab7258e325ccb8768b20de1c9ea632a025"
+    },
+    {
+      "source": "artifacts/physical_delivery/development_logs/physical_delivery3.log",
+      "copy": "files/artifacts/physical_delivery/development_logs/physical_delivery3.log",
+      "bytes": 20766,
+      "sha256": "698fdbf7a5044a206eb1dc5f58f557ae8e045a36e26f2ec0c0cd38f5284d5752"
+    },
+    {
+      "source": "artifacts/physical_delivery/development_logs/physical_delivery4.log",
+      "copy": "files/artifacts/physical_delivery/development_logs/physical_delivery4.log",
+      "bytes": 20052,
+      "sha256": "3c8c5ec811b0eb6c83ad5e68721503e86f04946fdeedf26d214179a024871ed3"
+    },
+    {
+      "source": "artifacts/physical_delivery/development_logs/physical_delivery_clearance.log",
+      "copy": "files/artifacts/physical_delivery/development_logs/physical_delivery_clearance.log",
+      "bytes": 18102,
+      "sha256": "c3a03a80ee9c5002cadd8584c9b2c857ab2f28ac7fa511b3908e717468c921a8"
+    },
+    {
+      "source": "artifacts/physical_delivery/development_logs/physical_delivery_complete.log",
+      "copy": "files/artifacts/physical_delivery/development_logs/physical_delivery_complete.log",
+      "bytes": 17711,
+      "sha256": "6529d84286869ff991c566151e0a1c91d687795f0448759983eb006663e5d598"
+    },
+    {
+      "source": "artifacts/physical_delivery/failed_repeat_before_carry_fix.json",
+      "copy": "files/artifacts/physical_delivery/failed_repeat_before_carry_fix.json",
+      "bytes": 58699,
+      "sha256": "899386271eb5eb407137ed0b1b15096841ed6fae308bd2151ffe16d8de54bdc9"
+    },
+    {
+      "source": "artifacts/physical_delivery/open_gripper.json",
+      "copy": "files/artifacts/physical_delivery/open_gripper.json",
+      "bytes": 41195,
+      "sha256": "343e750f7836a865368f7f5e01de8791dd1d8a440ed66d6bacff7c1f25a00336"
+    },
+    {
+      "source": "artifacts/physical_delivery/open_gripper.log",
+      "copy": "files/artifacts/physical_delivery/open_gripper.log",
+      "bytes": 16920,
+      "sha256": "f9f8a1f98e0d0824bede13af6833cbbcd3a7bbce9fdbad81101ec68181d8c32b"
+    },
+    {
+      "source": "artifacts/physical_delivery/pre_clearance_results/open_gripper.json",
+      "copy": "files/artifacts/physical_delivery/pre_clearance_results/open_gripper.json",
+      "bytes": 39567,
+      "sha256": "d7a74a857cb62a79fce3fd36b095eda5e7332b469c5b61d22be8731e7c33b237"
+    },
+    {
+      "source": "artifacts/physical_delivery/pre_clearance_results/seed1000.json",
+      "copy": "files/artifacts/physical_delivery/pre_clearance_results/seed1000.json",
+      "bytes": 95904,
+      "sha256": "7b61b2fe4e864cbf68303d02e13bde3d42376ae7fe8429fd4a4bfaa5ca0e3b49"
+    },
+    {
+      "source": "artifacts/physical_delivery/pre_clearance_results/seed1001.json",
+      "copy": "files/artifacts/physical_delivery/pre_clearance_results/seed1001.json",
+      "bytes": 94187,
+      "sha256": "4be162afa9ff3992e8e9ad245f9d75f51f24db12117a2258263190f324a5e7f8"
+    },
+    {
+      "source": "artifacts/physical_delivery/pre_clearance_results/seed1002.json",
+      "copy": "files/artifacts/physical_delivery/pre_clearance_results/seed1002.json",
+      "bytes": 95961,
+      "sha256": "13770d08830f40bcf4df174f0622de486eaf0bb173180a5b9a95ecb6a7ac62b9"
+    },
+    {
+      "source": "artifacts/physical_delivery/seed1000.json",
+      "copy": "files/artifacts/physical_delivery/seed1000.json",
+      "bytes": 131476,
+      "sha256": "e8eceae59a407d9f75946c36d8f72c28159805993b05df287eee068e78da4db1"
+    },
+    {
+      "source": "artifacts/physical_delivery/seed1000.log",
+      "copy": "files/artifacts/physical_delivery/seed1000.log",
+      "bytes": 18095,
+      "sha256": "44b34d09eba6f980995a2e7a86f886d9dc5571173ca4ff0a7da13f1bbb22246a"
+    },
+    {
+      "source": "artifacts/physical_delivery/seed1001.json",
+      "copy": "files/artifacts/physical_delivery/seed1001.json",
+      "bytes": 127874,
+      "sha256": "07243b8203ea776048a75e2587e03a1a75a7f20092af4f529d7810977cbbae66"
+    },
+    {
+      "source": "artifacts/physical_delivery/seed1001.log",
+      "copy": "files/artifacts/physical_delivery/seed1001.log",
+      "bytes": 18700,
+      "sha256": "c3c6822fb70ad8ba6888af6e8e700aabd6f606d3f7080b5cb1026c2b72316660"
+    },
+    {
+      "source": "artifacts/physical_delivery/seed1002.json",
+      "copy": "files/artifacts/physical_delivery/seed1002.json",
+      "bytes": 129869,
+      "sha256": "dd7b4a170fb13a2b37f9c37369f485838afd758c35a10664d1879f87f03f6942"
+    },
+    {
+      "source": "artifacts/physical_delivery/seed1002.log",
+      "copy": "files/artifacts/physical_delivery/seed1002.log",
+      "bytes": 18095,
+      "sha256": "1d30970346e65916694aa8341228bf28a6ae90fe03bb0f0641929e6a58dc250d"
+    },
+    {
+      "source": "artifacts/physical_delivery/tests.log",
+      "copy": "files/artifacts/physical_delivery/tests.log",
+      "bytes": 1275,
+      "sha256": "f8954cd7f72af70c06562b90c2368bda1e9b9e1ec6f8f28626a1fe9f2050f805"
+    },
+    {
+      "source": "artifacts/physical_delivery/trial1.json",
+      "copy": "files/artifacts/physical_delivery/trial1.json",
+      "bytes": 22247,
+      "sha256": "59af876948c4f41b5f020d537477cc76d237da1f5614f603799f90aab5a885f7"
+    },
+    {
+      "source": "artifacts/physical_delivery/trial2.json",
+      "copy": "files/artifacts/physical_delivery/trial2.json",
+      "bytes": 52487,
+      "sha256": "86f61dfeb68f62ab486a6bae9eb7f1bceac4424c637e708a2919f3a005c04d12"
+    },
+    {
+      "source": "artifacts/physical_delivery/trial3.json",
+      "copy": "files/artifacts/physical_delivery/trial3.json",
+      "bytes": 44574,
+      "sha256": "1f7ed0af18cdb6d6ee26bae2e99befad0fff21566a7798a0358a00f076d2d04d"
+    },
+    {
+      "source": "artifacts/physical_delivery/trial4.json",
+      "copy": "files/artifacts/physical_delivery/trial4.json",
+      "bytes": 90324,
+      "sha256": "8710151aed7f84279d0e3b97bdba84e783ca42a746695372c14a8f163db3410b"
+    },
+    {
+      "source": "artifacts/physical_delivery/verification.json",
+      "copy": "files/artifacts/physical_delivery/verification.json",
+      "bytes": 3115,
+      "sha256": "271ef8a74138c2fe58a35e3576a17c2166b7e95d2625ef17d2825c7be33cdb32"
+    },
+    {
+      "source": "docs/01_SYSTEM_DESIGN.md",
+      "copy": "files/docs/01_SYSTEM_DESIGN.md",
+      "bytes": 12174,
+      "sha256": "e54ae3aa1555924d628483c9d806422f5b35afb9c29f07752107df02769d1d22"
+    },
+    {
+      "source": "docs/02_GRASP_LEARNING.md",
+      "copy": "files/docs/02_GRASP_LEARNING.md",
+      "bytes": 9475,
+      "sha256": "53c89bd11156ba04f57730706d5e13f5403f284f2725b540de742c845fc15b87"
+    },
+    {
+      "source": "docs/03_DEVELOPMENT_HISTORY.md",
+      "copy": "files/docs/03_DEVELOPMENT_HISTORY.md",
+      "bytes": 14247,
+      "sha256": "6dd878c177cc2462537a3fdb73ac9445b54f04c37df17c8b465d7ae8aabb2636"
+    },
+    {
+      "source": "docs/04_PARAMETER_REFERENCE.md",
+      "copy": "files/docs/04_PARAMETER_REFERENCE.md",
+      "bytes": 7979,
+      "sha256": "7a886ecc71895b14a9fb3cfea62a75b7e8ca8e32f8c18976c39f5b008f8e2fab"
+    },
+    {
+      "source": "docs/05_EXPERIMENT_RUNBOOK.md",
+      "copy": "files/docs/05_EXPERIMENT_RUNBOOK.md",
+      "bytes": 12821,
+      "sha256": "73fa016fadaaddcbfc22c98f61727c546bf4c9c04b1235974d6e2088f51742f3"
+    },
+    {
+      "source": "docs/06_IMPROVEMENT_ROADMAP.md",
+      "copy": "files/docs/06_IMPROVEMENT_ROADMAP.md",
+      "bytes": 8414,
+      "sha256": "3834b533fe9c0ee36c47edd8940ce822aa1370a6e42b2083a93f7332bd75a4af"
+    },
+    {
+      "source": "docs/EXPERIMENT_TEMPLATE.md",
+      "copy": "files/docs/EXPERIMENT_TEMPLATE.md",
+      "bytes": 1908,
+      "sha256": "c60f7cfe5f7fd25a301627baf1f6a22c0a2eb13d8407a921111c9f7f94caf392"
+    },
+    {
+      "source": "docs/README.md",
+      "copy": "files/docs/README.md",
+      "bytes": 2948,
+      "sha256": "d7f3bd7bb9afa6d7f6635c4e904a3fae507fef94d584cd92375aa420bb8b907d"
+    },
+    {
+      "source": "physics_grasp/README.md",
+      "copy": "files/physics_grasp/README.md",
+      "bytes": 6203,
+      "sha256": "e4c86df62524e19d377b383a269e8118b19579f51c3ce2badd5d5ef6a4e0c495"
+    },
+    {
+      "source": "physics_grasp/attempt1_results/evaluation.json",
+      "copy": "files/physics_grasp/attempt1_results/evaluation.json",
+      "bytes": 46450,
+      "sha256": "20e3b9e09ef49aefdd5de952b9862c9e4ce4f4c54423414a3fdd370d680684fb"
+    },
+    {
+      "source": "physics_grasp/attempt1_results/policy.json",
+      "copy": "files/physics_grasp/attempt1_results/policy.json",
+      "bytes": 505,
+      "sha256": "6ac08434bff524f5bc65f270c647f62eb73c8759bd404b5d0517b02ee81d134f"
+    },
+    {
+      "source": "physics_grasp/attempt1_results/training.json",
+      "copy": "files/physics_grasp/attempt1_results/training.json",
+      "bytes": 5711,
+      "sha256": "17fdd097ae4b04d76a5f78525a1e9194007ef9fc3ce7c5abe292638d01b19196"
+    },
+    {
+      "source": "physics_grasp/attempt1_results/video_episode.json",
+      "copy": "files/physics_grasp/attempt1_results/video_episode.json",
+      "bytes": 382,
+      "sha256": "bafc5002fd8111f07666b2512bdf35e1e1435e64eaa8a26d1846b8f443434959"
+    },
+    {
+      "source": "physics_grasp/attempt2_results/evaluation.json",
+      "copy": "files/physics_grasp/attempt2_results/evaluation.json",
+      "bytes": 46485,
+      "sha256": "1a2aada6580a193e04e946480abd7e187c86ebb5274e98bdea4f5b6ca14ccfca"
+    },
+    {
+      "source": "physics_grasp/attempt2_results/policy.json",
+      "copy": "files/physics_grasp/attempt2_results/policy.json",
+      "bytes": 470,
+      "sha256": "558e36b5990d652222f7447187fc1f6aaa5a384c11778556ccef685acde0e261"
+    },
+    {
+      "source": "physics_grasp/attempt2_results/training.json",
+      "copy": "files/physics_grasp/attempt2_results/training.json",
+      "bytes": 5954,
+      "sha256": "af41a8b2c718e87cb6be4cb710ee7fe3bc1193c18ea3bffee2c42952a7ad2fcf"
+    },
+    {
+      "source": "physics_grasp/attempt2_results/video_episode.json",
+      "copy": "files/physics_grasp/attempt2_results/video_episode.json",
+      "bytes": 384,
+      "sha256": "1257165604268756ff54d1f93cd60c5fd7adeb84e6daa18bcb346b899669209d"
+    },
+    {
+      "source": "physics_grasp/attempt3_results/evaluation.json",
+      "copy": "files/physics_grasp/attempt3_results/evaluation.json",
+      "bytes": 46538,
+      "sha256": "4fd79c745ab2a358a04aea9f3aaae3726283867a2d6f68737ee4364bba3c9ae4"
+    },
+    {
+      "source": "physics_grasp/attempt3_results/policy.json",
+      "copy": "files/physics_grasp/attempt3_results/policy.json",
+      "bytes": 499,
+      "sha256": "fe21695c6c66680b6666680154419f24a8f5733c13873b58ba49775961cf3cca"
+    },
+    {
+      "source": "physics_grasp/attempt3_results/training.json",
+      "copy": "files/physics_grasp/attempt3_results/training.json",
+      "bytes": 5636,
+      "sha256": "f59284359d67cbc4043a6a390ee0243fc7000bf43915f1dc7e92c82275505964"
+    },
+    {
+      "source": "physics_grasp/attempt3_results/video_episode.json",
+      "copy": "files/physics_grasp/attempt3_results/video_episode.json",
+      "bytes": 382,
+      "sha256": "e1da94241a62a6e87a638b51b18243d56966a22b106420b7c71037df017268ec"
+    },
+    {
+      "source": "physics_grasp/build_scene.py",
+      "copy": "files/physics_grasp/build_scene.py",
+      "bytes": 3569,
+      "sha256": "8b53d9a7c40087ab8adebe3e86ed3a1f431a04b81b14235506ec7ed76b79e261"
+    },
+    {
+      "source": "physics_grasp/crane.urdf",
+      "copy": "files/physics_grasp/crane.urdf",
+      "bytes": 10001,
+      "sha256": "e0aa88e51e3becfcf9d1536cc9fe6f6ca3bb27bd8a8116baa5c7ca50fdb9d6a1"
+    },
+    {
+      "source": "physics_grasp/experiment.py",
+      "copy": "files/physics_grasp/experiment.py",
+      "bytes": 13098,
+      "sha256": "2498f131d9afc7b38658b60982649a6125ef0a9d086c5748ce1972bc6ce3afe0"
+    },
+    {
+      "source": "physics_grasp/imported.xml",
+      "copy": "files/physics_grasp/imported.xml",
+      "bytes": 5165,
+      "sha256": "17fd05dbdf959729b44173e4ab0c60495f5fba4425ed0590ce98acf35845427b"
+    },
+    {
+      "source": "physics_grasp/prepare_model.py",
+      "copy": "files/physics_grasp/prepare_model.py",
+      "bytes": 1272,
+      "sha256": "09f4114771d996c77d3fcb35a5e2dc289ce4d27fec28087098b8a28b83ab0fa5"
+    },
+    {
+      "source": "physics_grasp/requirements.txt",
+      "copy": "files/physics_grasp/requirements.txt",
+      "bytes": 104,
+      "sha256": "35085b1f0c0a18889584781be0ccd7eb55f7f1d823c12308bc3d9b1526184476"
+    },
+    {
+      "source": "physics_grasp/results/evaluation.json",
+      "copy": "files/physics_grasp/results/evaluation.json",
+      "bytes": 63452,
+      "sha256": "fa93f037e32a7afa2659cce799791d3d193d0306c2bc663c70b5dd3067c53edb"
+    },
+    {
+      "source": "physics_grasp/results/policy.json",
+      "copy": "files/physics_grasp/results/policy.json",
+      "bytes": 585,
+      "sha256": "aee76e184134694a54ffcd1a5b3b3d14cfe15af2fb66d936d6ed03a3947306fb"
+    },
+    {
+      "source": "physics_grasp/results/tests.log",
+      "copy": "files/physics_grasp/results/tests.log",
+      "bytes": 322,
+      "sha256": "ee480e2b0232b77540da74b87db086afed7cee94b875cb39b1405838afa937f4"
+    },
+    {
+      "source": "physics_grasp/results/train.log",
+      "copy": "files/physics_grasp/results/train.log",
+      "bytes": 2610,
+      "sha256": "da819fdf79d3e84ddcaaf234473b625524138fd235fea6b3fc03ab9074460d94"
+    },
+    {
+      "source": "physics_grasp/results/training.json",
+      "copy": "files/physics_grasp/results/training.json",
+      "bytes": 3012,
+      "sha256": "1bcb0acad1ba198dc82c5a36594b69f22887a701bfc69dc07606b180bef8eca9"
+    },
+    {
+      "source": "physics_grasp/results/video_episode.json",
+      "copy": "files/physics_grasp/results/video_episode.json",
+      "bytes": 546,
+      "sha256": "6966e998006da97af00e2c471caa213eedadeac86d232a6a3241eb7eb73fcc64"
+    },
+    {
+      "source": "physics_grasp/run.sh",
+      "copy": "files/physics_grasp/run.sh",
+      "bytes": 243,
+      "sha256": "991e21dbfc44946f0005fee0be281b0109dc42ce5a4dead88ff13c6b00a1fabb"
+    },
+    {
+      "source": "physics_grasp/scene.xml",
+      "copy": "files/physics_grasp/scene.xml",
+      "bytes": 33269,
+      "sha256": "6e372ae6d6aa21bf6d5296e24c5c3c658b6f752809274629205f25e66b11177c"
+    },
+    {
+      "source": "physics_grasp/test_physics.py",
+      "copy": "files/physics_grasp/test_physics.py",
+      "bytes": 2479,
+      "sha256": "4e2899cd53f203dff35006729f4a1b38d17303a971c211eca48e5872984218b3"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/config/gripper_collision_vertices.npz",
+      "copy": "files/ros2_ws/src/final_project_ros/config/gripper_collision_vertices.npz",
+      "bytes": 60552,
+      "sha256": "eda564faeb712aa3fac3481819359961d23b3bb42efada39d3c3ebffdd99e12b"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/config/physical_controllers.yaml",
+      "copy": "files/ros2_ws/src/final_project_ros/config/physical_controllers.yaml",
+      "bytes": 1371,
+      "sha256": "675d12978b8c1de8eab7a38ba85b4482dadf7961e21034bad8f355285035cf08"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/config/physical_crane.urdf",
+      "copy": "files/ros2_ws/src/final_project_ros/config/physical_crane.urdf",
+      "bytes": 13308,
+      "sha256": "93789fbe3a6f2763b9aba7b27f726340adb0c13c226dcf7651b7c1b86229b4a3"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/config/physical_scene.json",
+      "copy": "files/ros2_ws/src/final_project_ros/config/physical_scene.json",
+      "bytes": 125,
+      "sha256": "8ef75dc043ece84e31c00d4064121532cb9aa0c9bb10cd878c77959a7f575240"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/final_project_ros/__init__.py",
+      "copy": "files/ros2_ws/src/final_project_ros/final_project_ros/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/final_project_ros/color_pick_demo.py",
+      "copy": "files/ros2_ws/src/final_project_ros/final_project_ros/color_pick_demo.py",
+      "bytes": 4080,
+      "sha256": "efbac61612dc1708013ccf3a0000ed0a98683be9f182619a26f5c5e934ea227b"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/final_project_ros/delivery_controller.py",
+      "copy": "files/ros2_ws/src/final_project_ros/final_project_ros/delivery_controller.py",
+      "bytes": 30496,
+      "sha256": "e6a4060dfa473735653a3f23ecda8f91041cc7e4aa26b371f0d2d8f61f0dbe69"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/final_project_ros/gazebo_delivery_demo.py",
+      "copy": "files/ros2_ws/src/final_project_ros/final_project_ros/gazebo_delivery_demo.py",
+      "bytes": 6035,
+      "sha256": "19979d3ec1a571dc5715a128b9791836bc3e64f71d5d4e26790f8829faca7531"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/final_project_ros/learned_color.py",
+      "copy": "files/ros2_ws/src/final_project_ros/final_project_ros/learned_color.py",
+      "bytes": 3032,
+      "sha256": "c337b1c7cb9c9c864741bb7c5ce7bf04d1d48fcef90f30d8b6cbf64b885b2638"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/final_project_ros/motion_profile.py",
+      "copy": "files/ros2_ws/src/final_project_ros/final_project_ros/motion_profile.py",
+      "bytes": 1568,
+      "sha256": "fcb90ef14b61d959397855b11f44256c67fcd8c0235d02303e1cf1d433ed4d5b"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/final_project_ros/physical_delivery.py",
+      "copy": "files/ros2_ws/src/final_project_ros/final_project_ros/physical_delivery.py",
+      "bytes": 16676,
+      "sha256": "82b8e70f3c902c4502514b6066386ef69c3a49f5118d8dc4b27c3b9b3b907592"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/final_project_ros/physical_plan.py",
+      "copy": "files/ros2_ws/src/final_project_ros/final_project_ros/physical_plan.py",
+      "bytes": 3567,
+      "sha256": "bba242556b5ec371f4546523ff5e62c6aceb4f7b975952d4c88696865312b920"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/final_project_ros/record_demo.py",
+      "copy": "files/ros2_ws/src/final_project_ros/final_project_ros/record_demo.py",
+      "bytes": 5478,
+      "sha256": "701d3c7aa28436fb7781115a4ae3dc5f79b195cc0ed96c7c4ce586135a206305"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/launch/physical_delivery.launch.py",
+      "copy": "files/ros2_ws/src/final_project_ros/launch/physical_delivery.launch.py",
+      "bytes": 3026,
+      "sha256": "a0729a13088bb71ba3ae39cb424918bd8f1dd9e43c19dcf53bb4c9f90f751dc7"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/launch/simple_delivery.launch.py",
+      "copy": "files/ros2_ws/src/final_project_ros/launch/simple_delivery.launch.py",
+      "bytes": 8003,
+      "sha256": "7826490acecd545d0a02e0daac7b32f62279b23267107b19ab0e814459a82798"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/models/color_tree.json",
+      "copy": "files/ros2_ws/src/final_project_ros/models/color_tree.json",
+      "bytes": 538,
+      "sha256": "058057c0a5582c92a7dfc2aca8faa7b54054cbf40fd72f5213e23fa81ec3d736"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/models/color_tree.yml",
+      "copy": "files/ros2_ws/src/final_project_ros/models/color_tree.yml",
+      "bytes": 9463,
+      "sha256": "56360c2b2939d9b648437b9e9c1780b5ac6e8007774972d61f62a9a7dec10b55"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/models/learned_grasp_policy.json",
+      "copy": "files/ros2_ws/src/final_project_ros/models/learned_grasp_policy.json",
+      "bytes": 585,
+      "sha256": "aee76e184134694a54ffcd1a5b3b3d14cfe15af2fb66d936d6ed03a3947306fb"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/package.xml",
+      "copy": "files/ros2_ws/src/final_project_ros/package.xml",
+      "bytes": 1399,
+      "sha256": "005e680937dd613722289cb25e0590afc3418895d2d5c693b4721410349d117b"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/setup.py",
+      "copy": "files/ros2_ws/src/final_project_ros/setup.py",
+      "bytes": 1625,
+      "sha256": "e8cadd7931e5adbec046df3e883dd9f6572c28d27e343f534cd66ad4ec3664f8"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/worlds/multi_color_delivery.world",
+      "copy": "files/ros2_ws/src/final_project_ros/worlds/multi_color_delivery.world",
+      "bytes": 12076,
+      "sha256": "efe0696954aaeb5c5efd9ac1ef11186995801574138bfcd4a65d986b76b58783"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/worlds/physical_delivery.world",
+      "copy": "files/ros2_ws/src/final_project_ros/worlds/physical_delivery.world",
+      "bytes": 11915,
+      "sha256": "85ce93842d2bbcf9fb86886710d5b3d26547998b344bcbb1eafaf469427a8e2b"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/worlds/simple_delivery.world",
+      "copy": "files/ros2_ws/src/final_project_ros/worlds/simple_delivery.world",
+      "bytes": 6531,
+      "sha256": "9cfb43ae46ad980e4ab8b3a1fec47b0c1c5d3a77185fb8ecbac6e1894330fa3f"
+    },
+    {
+      "source": "ros2_ws/src/final_project_ros/worlds/two_target_delivery.world",
+      "copy": "files/ros2_ws/src/final_project_ros/worlds/two_target_delivery.world",
+      "bytes": 6844,
+      "sha256": "c56853031e822f4930b4d8c3d5a3f6c8f078969a7d5a7f14de799995e246cd93"
+    },
+    {
+      "source": "run_demo.sh",
+      "copy": "files/run_demo.sh",
+      "bytes": 310,
+      "sha256": "123287f2a2071a366c01252e349a7df1f80a46b8024d518dec9aa1bb6b176a51"
+    },
+    {
+      "source": "run_legacy_demo.sh",
+      "copy": "files/run_legacy_demo.sh",
+      "bytes": 504,
+      "sha256": "acde7cc5007015d7720b7c330cc2cacc27c0fdd81441dfbb05da435fc47ab6c5"
+    },
+    {
+      "source": "run_physical_demo.sh",
+      "copy": "files/run_physical_demo.sh",
+      "bytes": 874,
+      "sha256": "8a0c6b78196801ff8bd8d402825ad3c88d8cbc6460da5aaf7579c11f0f7d84eb"
+    },
+    {
+      "source": "tests/test_delivery.py",
+      "copy": "files/tests/test_delivery.py",
+      "bytes": 3612,
+      "sha256": "210c9da173713968c8854b5cedd32aa68ed44e23e20957dcc979c195746b0f9a"
+    },
+    {
+      "source": "tests/test_motion_profile.py",
+      "copy": "files/tests/test_motion_profile.py",
+      "bytes": 1772,
+      "sha256": "ca7541e9f7770291853c4da400f35e99c022abad02a0838c4b0a1bc5deb96916"
+    },
+    {
+      "source": "tests/test_physical_delivery.py",
+      "copy": "files/tests/test_physical_delivery.py",
+      "bytes": 2356,
+      "sha256": "6d384511d5f7ea86b84cb06480fbf8bdbe5ed46ba628afd126167cac6bcb8b72"
+    },
+    {
+      "source": "tools/build_development_docs.py",
+      "copy": "files/tools/build_development_docs.py",
+      "bytes": 6758,
+      "sha256": "a6af2f07843ba6dab45ecc925c6ef16b8c3adf61291a6329588dd6da7091f34c"
+    },
+    {
+      "source": "tools/check_physical_delivery.py",
+      "copy": "files/tools/check_physical_delivery.py",
+      "bytes": 1178,
+      "sha256": "06c17b648fd7d72f478d06ed33c4942049877bf17b110955927bdef6a87640fc"
+    },
+    {
+      "source": "tools/compare_motion.py",
+      "copy": "files/tools/compare_motion.py",
+      "bytes": 2366,
+      "sha256": "e2cef296209796c49186d404f1a140fbead7ed433c698d41079fd459a2157282"
+    },
+    {
+      "source": "tools/document_experiments.py",
+      "copy": "files/tools/document_experiments.py",
+      "bytes": 8200,
+      "sha256": "2cd9ff32f608d39d7ebf442fe0464d2762d59a22b4e7a9b1a49e0c9c596cbcb0"
+    },
+    {
+      "source": "tools/prepare_physical_delivery.py",
+      "copy": "files/tools/prepare_physical_delivery.py",
+      "bytes": 9150,
+      "sha256": "92887c363dd063a8440aee0647248b57392e82d78d2ca54ac6de4a66d70440b5"
+    },
+    {
+      "source": "tools/prepare_physical_submission.py",
+      "copy": "files/tools/prepare_physical_submission.py",
+      "bytes": 11115,
+      "sha256": "1e24f48747c1625900e47ff2a6488209497b62052a59b1ab2b567e68f4e094e8"
+    },
+    {
+      "source": "tools/prepare_submission.py",
+      "copy": "files/tools/prepare_submission.py",
+      "bytes": 10861,
+      "sha256": "15ee07ab34394f19e2eed14322e628b55bcd49a59b66bf2f5b47ad7827661274"
+    },
+    {
+      "source": "tools/summarize_physical_delivery.py",
+      "copy": "files/tools/summarize_physical_delivery.py",
+      "bytes": 2193,
+      "sha256": "96f96aac1e6c766ea3b544aef4dc2abc09cd2f93bd6ae2186735215e49a2f65c"
+    },
+    {
+      "source": "tools/train_color_model.py",
+      "copy": "files/tools/train_color_model.py",
+      "bytes": 386,
+      "sha256": "895b51eb4252f5a83a7cd91310a819416b829cf0e67ce0186894181425bfd580"
+    },
+    {
+      "source": "tools/verify_physical_delivery.py",
+      "copy": "files/tools/verify_physical_delivery.py",
+      "bytes": 2102,
+      "sha256": "09bbe342f5dd0980fc98ced77afdb72b3efa746d74b6117be01c6a64bfce7efc"
+    }
+  ],
+  "geometry_sha256": {
+    "physics_grasp/assets/Hand_20201013.stl": "ed77aafd5ad15cf0b29cf1e4ece0f2c5c9856ed924d9f416f1dc32009448d712",
+    "physics_grasp/assets/Hand_collision_20201013/part00.obj": "559f32f9b5d2e0698f9ce084cb0c6459f94a7e6e8385bb572d12a6ed34d35f92",
+    "physics_grasp/assets/Hand_collision_20201013/part01.obj": "f217e3029877d05a0e45bcc3ce288f4e8baaa70a4f2882af415cbd73064ba50c",
+    "physics_grasp/assets/Hand_collision_20201013/part02.obj": "b9c03b6422acbd913f037ef1d14dfc4572d5ff919f7f99a222de5f0277de99ac",
+    "physics_grasp/assets/Hand_collision_20201013/part03.obj": "48ddb5080906f08944a64fca635e35b6d55285fa7e150378d7388df3820e0146",
+    "physics_grasp/assets/Hand_collision_20201013/part04.obj": "cdc387cfc7e13bc179814f69743393445520af9669f396799cfed83696600420",
+    "physics_grasp/assets/Hand_collision_20201013/part05.obj": "8f9e1851a203c10c499e736ae37d022498e62d7b3306d3f7590d65aee1ffd2f2",
+    "physics_grasp/assets/Hand_collision_20201013/part06.obj": "fa343cbcb04bf4b462f94f3c03d480b11fb29ad510307c95cec04cd8de85a24b",
+    "physics_grasp/assets/Hand_collision_20201013/part07.obj": "bba66a6ce23e6dfe2eaed74b4b2deff9cf2e17f41910e340c384a0aacfdf7f3e",
+    "physics_grasp/assets/Hand_collision_20201013/part08.obj": "cd730f59e51bfdd32d6781512714c08787695b17a7630078dd47ac30c12867bd",
+    "physics_grasp/assets/Hand_collision_20201013/part09.obj": "597c4d751203077b3780ead837a81cb8bbbf8dd37a94b199c97021a1444a774c",
+    "physics_grasp/assets/Hand_collision_20201013/part10.obj": "d994affa78e30dc983a6e7e3a7b0dc065cd0689d12f6c0c41e2c4aff02bc3632",
+    "physics_grasp/assets/Hand_collision_20201013/part11.obj": "6b1aad479692c14fced5a11bd25837c476250bce22ed150a046d31a5fea9f6e3",
+    "physics_grasp/assets/Hand_collision_20201013/part12.obj": "74d36e30bf5784fdde40e197c94a550e7ae78fa02be5adb2f05e9e3f433e7e34",
+    "physics_grasp/assets/Hand_collision_20201013/part13.obj": "aca8a54b1d57ea9e9ba0a74fdd0036c4b1514bd6d67041c7d38cd956e95e9461",
+    "physics_grasp/assets/Hand_collision_20201013/part14.obj": "26dbba7e063ecc2947d279c12e81d7d2628bd213f4a4ac720a55025d9e1584f5",
+    "physics_grasp/assets/Hand_collision_20201013/part15.obj": "48752f0c622dd130807da168a1af6a59e8b59e435a552e650e01e297c290e4b7",
+    "physics_grasp/assets/Hand_collision_20201013/part16.obj": "7fad971cfabbe79d3be1b26840f823db94e5a13fa81ac4d769e4ff254c5accee",
+    "physics_grasp/assets/Hand_collision_20201013/part17.obj": "8146e2642a84ae2be85a8e3ed1def62fb59b72f6707a512beaa5d77a6354ad80",
+    "physics_grasp/assets/Hand_collision_20201013/part18.obj": "059eaaf4b1de73927e02db148d56df3330ddba76838581340c84c97c2ea5f8e1",
+    "physics_grasp/assets/Hand_collision_20201013/part19.obj": "ebccd5f783049d2ca2b1d74ab46c0ea137902f00d1d728fa07cdc80e1b3db9cf",
+    "physics_grasp/assets/Hand_collision_20201013/part20.obj": "30a36e5cc97d7d8e4e53c6ddef26b02ce890310c31dbb617de6a71ae7e85e417",
+    "physics_grasp/assets/Hand_collision_20201013/part21.obj": "b376cb0f024678e8ff4b3c41e63d6ba66c9ba4576293b162fc23dad811a85dd6",
+    "physics_grasp/assets/Hand_collision_20201013/part22.obj": "186654e095a0fe2bbf50f5eff6bbeab99b82194c90b998d6bebe7686b78bce96",
+    "physics_grasp/assets/Hand_collision_20201013/part23.obj": "7a10318e083eb66d3f150433fafd5587c891eb615dae9d1a5aa8d0fcbb212da2",
+    "physics_grasp/assets/Hand_collision_20201013/part24.obj": "f46c2baf01ecb4de2ae34fc753c1b1e59d5bda27988c33873511962d70cffc6b",
+    "physics_grasp/assets/Hand_collision_20201013/part25.obj": "e5d9d8b451d7e9f82f60d46735893bf8d860641b8779acc1ba7a1a8b56fe1cf7",
+    "physics_grasp/assets/Hand_collision_20201013/part26.obj": "5a67f3590be8c1a88e5ecef9b4f0d3bb939217100614469454d112fd4b646734",
+    "physics_grasp/assets/Hand_collision_20201013/part27.obj": "16a69351f48dd7c3742ae9c897f66a57e4032fd346b2e7cdce3a690968d0ace4",
+    "physics_grasp/assets/Hand_collision_20201013/part28.obj": "460605b9c66555c1d0545d17ce2b3d4e0fb5d5d785daada2697d2d8f11849ef9",
+    "physics_grasp/assets/Hand_collision_20201013/part29.obj": "5557405d41f197ee700f23ffea631f438637c135a9e0ac1c356606bdb06b9100",
+    "physics_grasp/assets/Hand_collision_20201013/part30.obj": "7d0acf5ad7a81387e3a3c035b2e50fb5f1a6378eddf09e4f9829545123d9601f",
+    "physics_grasp/assets/Hand_collision_20201013/part31.obj": "e3de0016611dc1dca128d891d59c4189862dc19ad923b07f3e10b39417330147",
+    "physics_grasp/assets/Hand_collision_20201013/part32.obj": "9f370420e583e33edb28703b72a8797c5c978a4f0a11c60a3e07e0c4044c003e",
+    "physics_grasp/assets/Hand_collision_20201013/part33.obj": "07875ff9fcea64a84f3b020e4f50768ba638a99f1307f3cd012c797487b56ed0",
+    "physics_grasp/assets/Hand_collision_20201013/part34.obj": "8608ede8281cbff36238746d5da077f8d67cbbdbb7e5eeea76427a12b470c4be",
+    "physics_grasp/assets/Hand_collision_20201013/part35.obj": "48115a52a937954fb3fcdccdca9b97cd18a176ce89e638634ac6dd36d2a51bc6",
+    "physics_grasp/assets/Hand_collision_20201013/part36.obj": "3c0705ec4e3f49575079dac01ed0f084df461d78f75036f570bf65fc32d67479",
+    "physics_grasp/assets/Hand_collision_20201013/part37.obj": "2c62e8214c63fa5c166fd27068455f4fb9658f960b31df9a190c311b7747e289",
+    "physics_grasp/assets/Hand_collision_20201013/part38.obj": "c3eefc6d44dcf10a9a4d02e67b6b1e424b847037c0da6c09ac443238b75d3b3e",
+    "physics_grasp/assets/Hand_collision_20201013/part39.obj": "cda01639e35a7f00efedb511669fc146aa5bd9bf2055da01b78665712650423c",
+    "physics_grasp/assets/Hand_collision_20201013.stl": "a168611127f4162c2911070afc18c02f1a591f2d569b9ec22b1a87db9a8ff079",
+    "physics_grasp/assets/Link1_20201013.stl": "b90d24c6de7802612c7be80a5c130007e9141f01fc79c0c562fbbaa3d1a5f98c",
+    "physics_grasp/assets/Link1_collision_20201013.stl": "0f75cb8fc3d516f4726425a2deb16b77331e0a7599ad6e97593c2f226f5a6f95",
+    "physics_grasp/assets/Link2_20201013.stl": "9a8706ad49db9aa291c94807d9df0256a0de8c209a6b823aeba91af93708d4a4",
+    "physics_grasp/assets/Link2_collision_20201013.stl": "269da08888436d16e4681f1affc857419d92e79c94c6530b96c1a72af3e6ee0f",
+    "physics_grasp/assets/Link3_20201013.stl": "3c6763e6117ee0fe1f52dd34ab7ac065f25af8edb54c823ca4f671682f53f293",
+    "physics_grasp/assets/Link3_collision_20201013.stl": "22c4c218ae9713246418bbdc7b79b9ffebe3fdc264a34d97a25b161a3976b800",
+    "physics_grasp/assets/Link4_20201013.stl": "b8fb401be0e95c77c364b0664e774216ed6e8582d708e1094714511523950ed8",
+    "physics_grasp/assets/Link4_collision_20201013/part00.obj": "5258e25b04e3c93867cc6d0a93be7f2e7400c8143f038cd64150a3a64aa4ca20",
+    "physics_grasp/assets/Link4_collision_20201013/part01.obj": "9125aa796e9e1ce5067247b6c4d85953abc2ddd956e725725f7a3814c8742ecd",
+    "physics_grasp/assets/Link4_collision_20201013/part02.obj": "5420ab127be12a0b7cdf515a39a9a4285f20a2e2bccc6b021b6c1971adaf76bc",
+    "physics_grasp/assets/Link4_collision_20201013/part03.obj": "b551bc1354a901c8c1080e1bf06dd31cd72731d493de528fba5846123cd3cfb7",
+    "physics_grasp/assets/Link4_collision_20201013/part04.obj": "da81769ab0472deed1cf1cee22a2aab02a5121380a67b79c9e51fa16b0074621",
+    "physics_grasp/assets/Link4_collision_20201013/part05.obj": "5a9a6c66b6ec7e1f800d7c3aa1cdd25f168b6d75a9a1cfacf5db123350bded2b",
+    "physics_grasp/assets/Link4_collision_20201013/part06.obj": "3cb94160aac10cb546a7b0b01c6b01fe8abb3ab75bd48979039172fe2acb788a",
+    "physics_grasp/assets/Link4_collision_20201013/part07.obj": "99ac84a63d701934fd6a6217575a3e9aa8025e27a5da62a54b36d47c69fa61d1",
+    "physics_grasp/assets/Link4_collision_20201013/part08.obj": "ddf0af447d9bc9b7008f90e76033d5b99c1721f84dbb419665c0000a75d3c002",
+    "physics_grasp/assets/Link4_collision_20201013/part09.obj": "be386a808748fa0c19178e83b1f93196b14639de2f70b8c9c34a0f42b5b77a12",
+    "physics_grasp/assets/Link4_collision_20201013/part10.obj": "c3a9ba3eafdc694925d677f49a0e32a9a2c8ae4c6378671f12415e78b258a341",
+    "physics_grasp/assets/Link4_collision_20201013/part11.obj": "1ff15dc98829f932fe2801c4d8b94f99382d9869ed6b8763fac22d8527dfaef0",
+    "physics_grasp/assets/Link4_collision_20201013/part12.obj": "e24522d270c5779f6572bf4953ec75c490adc7c26702d3fb6800d9e186ee1ff4",
+    "physics_grasp/assets/Link4_collision_20201013/part13.obj": "eb1110d6de6c6ef8ad361a6df67ae35335d7bf7dfe1cdb2d9e28a3af49a0a85a",
+    "physics_grasp/assets/Link4_collision_20201013/part14.obj": "c9433bd49d894b277a28bc87dd2da5346276804a7a92576fc1f5d9855f5e410a",
+    "physics_grasp/assets/Link4_collision_20201013/part15.obj": "96af8f7d7a79478636de94616499f0e70eda880893e780419c90ebc82e42bf4b",
+    "physics_grasp/assets/Link4_collision_20201013/part16.obj": "9c6ec2999542a838cdaa2ee46c8d7193cb466f8e60a3d22021b08ec2a7d8906d",
+    "physics_grasp/assets/Link4_collision_20201013/part17.obj": "4cfe24e556c87bf629a0738cc496d139ebff2a3cbe226672d553a69576ef8ebf",
+    "physics_grasp/assets/Link4_collision_20201013/part18.obj": "d44702d5e4997edd56aa0ebba40edf911c51e56ecd13587a1d58f0237446c872",
+    "physics_grasp/assets/Link4_collision_20201013/part19.obj": "edd9f22bcc57ed5a9cc5cadc8af0eacf9eb4b554f236c5b0823b18e0ff7d881e",
+    "physics_grasp/assets/Link4_collision_20201013/part20.obj": "b8ace69e8578bc46dcc3f6ed89402121d204fa73581e0ca98dd509dd2758a673",
+    "physics_grasp/assets/Link4_collision_20201013/part21.obj": "f976076b95bd70daec076c91e2f79966066ed62b50e2c8dfcb1c87850bdb30f5",
+    "physics_grasp/assets/Link4_collision_20201013/part22.obj": "e8f56070068596bd9ac9de68d57c085de4f586a2de606ac42c5ec57f99e41fe2",
+    "physics_grasp/assets/Link4_collision_20201013/part23.obj": "f42787410c76b04f4e2503a6aec7bb2ea125ddc52edc15c047baf006ad7f06cd",
+    "physics_grasp/assets/Link4_collision_20201013/part24.obj": "2c34a78820ce9ec347ea8c6f3075fd1a563b7375328b47c1fcb90b789cba222f",
+    "physics_grasp/assets/Link4_collision_20201013/part25.obj": "c5436fff3500904f5a430d98c7a068b4c7a9acca5555897185df5176bd356c06",
+    "physics_grasp/assets/Link4_collision_20201013/part26.obj": "9117ea4743de37d92047b55ee6658d955e451b239558930db05404d31bf2d968",
+    "physics_grasp/assets/Link4_collision_20201013/part27.obj": "b28f70284f38d08e250aa0eb02b6bf8394e3ce7a0a1b204c5d5f50a15c0137e5",
+    "physics_grasp/assets/Link4_collision_20201013/part28.obj": "a2660bc9a89e347156efd7d88fda6d787739a14dc94e02b45625e9b82b8cfdda",
+    "physics_grasp/assets/Link4_collision_20201013/part29.obj": "72f14570dbdf4b36815d5d21089a4d28f9c3ac4f8b5432b6752acc3ddfe6854b",
+    "physics_grasp/assets/Link4_collision_20201013/part30.obj": "d38bda0213d324ded1f018ad3d5bf3ff1c813aa5ac142b3b24ef20cda281eb2e",
+    "physics_grasp/assets/Link4_collision_20201013/part31.obj": "ce0d0c72d9458591bdb4ad4a7c6c1beb43696104d0211a2f3819dd88f4ff170c",
+    "physics_grasp/assets/Link4_collision_20201013/part32.obj": "de7e1a826464cd7ab85614fba9f3c17c6d5ca1481c6ccea8e573ab00ad89512f",
+    "physics_grasp/assets/Link4_collision_20201013/part33.obj": "dc2e646e75c32366aefaed2af53cbee10242fa050837e9f0b4c87a81a233b7fb",
+    "physics_grasp/assets/Link4_collision_20201013/part34.obj": "119860f8326daa8d49024bd1625a294fea8f04cb2ccba6469957509076d67be0",
+    "physics_grasp/assets/Link4_collision_20201013/part35.obj": "903f776a03bacfd7cd8112efd1e2cbbeb985c7967e3dcdcf123e8943d9fe726c",
+    "physics_grasp/assets/Link4_collision_20201013/part36.obj": "01079486f53663b4bb92822a742388c7e576f4218805155c68eece771bd8ea41",
+    "physics_grasp/assets/Link4_collision_20201013/part37.obj": "d224be0c3ad4d1d392f7a51b7558306e3ac7ebdcea45356883ff8d9668a5fb4c",
+    "physics_grasp/assets/Link4_collision_20201013/part38.obj": "f5969f0123064c2e0ac00727925d8c36e5042d40edffa16c9d5877356f2e8291",
+    "physics_grasp/assets/Link4_collision_20201013/part39.obj": "7b8c1ea44ad5ae467ae9c1929221df925429526281e83c732b71754ca14e123e",
+    "physics_grasp/assets/Link4_collision_20201013/part40.obj": "76123cefe60a71c5a238951a4b70f3d09ea3246540ea9801aa7f76b5d800a714",
+    "physics_grasp/assets/Link4_collision_20201013/part41.obj": "a11e8819d9240865bf93fa52aa1125f545b587f7dac8f08404dd3a4c9b5763c3",
+    "physics_grasp/assets/Link4_collision_20201013/part42.obj": "4da36931aece706732522cb5048268b8f47364a831c248bc09adac41658dbfe5",
+    "physics_grasp/assets/Link4_collision_20201013/part43.obj": "d848d1bf6e5a8f9478dbfe2cebc831984bf169af105be9a3ae365c0ac433564e",
+    "physics_grasp/assets/Link4_collision_20201013/part44.obj": "22adc3df0218295b8b59b5ef5d2f191f2ca1f2d6541c3cb5340215dc3af39419",
+    "physics_grasp/assets/Link4_collision_20201013/part45.obj": "14c72d03e921a3f6752b4bae6525c3995b89f841ddbc752dcae1b2148daea619",
+    "physics_grasp/assets/Link4_collision_20201013/part46.obj": "0d11da7a9521611499645c5d7083be7407513aab8ff882f4d04d821c738de91c",
+    "physics_grasp/assets/Link4_collision_20201013/part47.obj": "80ffb50dc19a80e6fc06f11c4dcb2c8aca0ea617ce6e99cfa58443f3182abb8d",
+    "physics_grasp/assets/Link4_collision_20201013/part48.obj": "2dc8ef17ceb57f2066ca15f63b2304481f95ed69a02a2c924663bec598617f73",
+    "physics_grasp/assets/Link4_collision_20201013.stl": "08760521067e4548045fe1245af1355eacee1c9efefbcc2cfbfe55de5ce5a435",
+    "physics_grasp/assets/body_20201013.stl": "c0674ca1ec8e75fb1d814565350cbb2203fdef02d18e912a9e35b325d896976f",
+    "physics_grasp/assets/body_collision_20201013.stl": "dc4190fd3db477b0f4170be4093bb341ef4af0829688ad93040389ba59a4f5a0"
+  }
+}

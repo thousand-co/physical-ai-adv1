@@ -1,0 +1,8 @@
+test_contact_lift_then_release_falls (__main__.ContactGraspTests) ... ok
+test_open_gripper_does_not_lift (__main__.ContactGraspTests) ... ok
+test_saved_evaluation_is_held_out_and_complete (__main__.ContactGraspTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.731s
+
+OK

@@ -1,0 +1,15 @@
+test_joint_tolerance_does_not_finish_a_running_trajectory (test_delivery.MotionTests) ... ok
+test_placement_requires_actual_model_pose (test_delivery.MotionTests) ... ok
+test_unreached_arm_fails_instead_of_claiming_success (test_delivery.MotionTests) ... ok
+test_empty_scene_does_not_trigger_a_pick (test_delivery.PerceptionTests) ... ok
+test_tiny_noise_is_rejected (test_delivery.PerceptionTests) ... ok
+test_two_blue_objects_and_red_distractor (test_delivery.PerceptionTests) ... ok
+test_invalid_limits_are_rejected (test_motion_profile.MotionProfileTests) ... ok
+test_limits_end_conditions_and_monotonic_joint_motion (test_motion_profile.MotionProfileTests) ... ok
+test_small_descent_takes_less_time_than_large_reposition (test_motion_profile.MotionProfileTests) ... ok
+test_stationary_goal_is_valid (test_motion_profile.MotionProfileTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.005s
+
+OK

@@ -1,0 +1,1340 @@
+{
+  "final_state": "error",
+  "success": false,
+  "engine": "Gazebo Classic ODE",
+  "grasp": "contact friction; learned residual parameters; effort-controlled joints",
+  "parameters": [
+    -0.004904254708598663,
+    -0.011529122401720276,
+    0.15666949417461407,
+    3.286602291594271,
+    0.42162492435964455,
+    0.8433766590648981,
+    0.3012757835923794,
+    0.8701335706510731
+  ],
+  "events": [
+    {
+      "state": "initializing",
+      "time": 0.0,
+      "reason": ""
+    },
+    {
+      "state": "moving_to_start",
+      "time": 2.341,
+      "reason": ""
+    },
+    {
+      "state": "error",
+      "time": 9.755,
+      "reason": "joint_tracking_timeout: 1.7892321432495368"
+    }
+  ],
+  "samples": [
+    {
+      "time": 2.341,
+      "phase": "initializing",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 2.444,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 2.544,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 2.642,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 2.744,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 2.846,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 2.944,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 3.046,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 3.148,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 3.247,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 3.345,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 3.445,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 3.549,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 3.651,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 3.751,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 3.843,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 3.942,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 4.045,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 4.145,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 4.246,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 4.344,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 4.447,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 4.55,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 4.649,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 4.749,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 4.845,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 4.944,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 5.044,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 5.147,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 5.247,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 5.346,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 5.446,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 5.546,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 5.643,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 5.748,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 5.844,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 5.947,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 6.049,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 6.149,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 6.25,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 6.349,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 6.447,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 6.548,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 6.647,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 6.748,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 6.851,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 6.952,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 7.054,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 7.148,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 7.254,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 7.352,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 7.456,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 7.552,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 7.654,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 7.753,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 7.851,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 7.955,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 8.057,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 8.155,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 8.255,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 8.358,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 8.454,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 8.557,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 8.655,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 8.759,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 8.857,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 8.956,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 9.053,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 9.154,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 9.255,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 9.354,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 9.457,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 9.552,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 9.656,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 9.755,
+      "phase": "moving_to_start",
+      "position": [
+        0.205,
+        -0.025,
+        0.0697992649999265
+      ],
+      "bilateral_contact": false,
+      "joints": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "initial_model_positions": {
+    "target_blue_00": [
+      0.205,
+      -0.025,
+      0.0697992649999265
+    ],
+    "distractor_red": [
+      0.31,
+      0.055,
+      0.0697992649999265
+    ]
+  },
+  "final_model_positions": {
+    "target_blue_00": [
+      0.205,
+      -0.025,
+      0.0697992649999265
+    ],
+    "distractor_red": [
+      0.31,
+      0.055,
+      0.0697992649999265
+    ]
+  },
+  "lift_confirmed": false,
+  "transport_confirmed": false,
+  "command_peak_velocity_rad_s": 1.0,
+  "command_peak_acceleration_rad_s2": 0.9178467196273125,
+  "wall_seconds": 7.503560003000075,
+  "disable_grip": false
+}

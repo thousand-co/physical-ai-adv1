@@ -1,0 +1,45 @@
+Arguments (pass arguments as '<name>:=<value>'):
+
+    'startup_homing':
+        no description given
+        (default: 'false')
+
+    'approach_max_velocity':
+        no description given
+        (default: '0.8')
+
+    'approach_max_acceleration':
+        no description given
+        (default: '1.4')
+
+    'descent_max_velocity':
+        no description given
+        (default: '0.35')
+
+    'descent_max_acceleration':
+        no description given
+        (default: '0.7')
+
+    'record_demo':
+        no description given
+        (default: 'false')
+
+    'record_output':
+        no description given
+        (default: '/home/ubuntu/final_pj/final_project_ros/ros2_ws/artifacts/demo_raw.mp4')
+
+    'gui':
+        Run the Gazebo client for visualization
+        (default: 'true')
+
+    'world':
+        SDF world file to load
+        (default: '/home/ubuntu/final_pj/final_project_ros/ros2_ws/install/final_project_ros/share/final_project_ros/worlds/simple_delivery.world')
+
+    'target_color':
+        Tab10 color to sort: blue, orange, green, red, purple, brown, pink, gray, olive, or cyan
+        (default: 'blue')
+
+    'server':
+        Set to "false" not to run gzserver.
+        (default: 'true')

@@ -1,0 +1,476 @@
+{
+  "recorded_at_utc": "2026-10-27T13:39:34.175844+00:00",
+  "interpretation": "Observed files, not a complete chronological history of all executed trials. Old versions are not pooled into the final-version success count.",
+  "delivery_records": [
+    {
+      "path": "artifacts/conveyor_sorting/episode.json",
+      "sha256": "f30e2b554afc4482ae93755a5cc15d86e26880212d85bf47dbfdd22c4a86dca5",
+      "final_state": "done",
+      "reason": "",
+      "final_sequence_markers_present": true,
+      "scene": {
+        "seed": null,
+        "mass_kg": 0.03,
+        "friction": 1.0,
+        "target_initial_position": [
+          0.205,
+          -0.025,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/conveyor_sorting/episode.mp4",
+        "artifacts/conveyor_sorting/episode.png"
+      ]
+    },
+    {
+      "path": "artifacts/conveyor_sorting/lift_slip.json",
+      "sha256": "ab3cdff50eb87b397c226cf588beb4a32bb60cb85b6744793ccad3d4d5fdf976",
+      "final_state": "error",
+      "reason": "lift_not_confirmed",
+      "final_sequence_markers_present": false,
+      "scene": {
+        "seed": null,
+        "mass_kg": 0.03,
+        "friction": 1.0,
+        "target_initial_position": [
+          0.205,
+          -0.025,
+          0.071
+        ]
+      },
+      "media": []
+    },
+    {
+      "path": "artifacts/conveyor_sorting/release_interference.json",
+      "sha256": "a2420cb4d3b5db2c5c3f26c84409a8233919178cda6c231050c4dd00b5ab9ab7",
+      "final_state": "error",
+      "reason": "joint_tracking_timeout: 0.1274382050446654",
+      "final_sequence_markers_present": true,
+      "scene": {
+        "seed": null,
+        "mass_kg": 0.03,
+        "friction": 1.0,
+        "target_initial_position": [
+          0.205,
+          -0.025,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/conveyor_sorting/release_interference.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/before_release_clearance_fix/delivery.json",
+      "sha256": "3f46236fe755e39b66e23dd51b3b57806c2b72faf0c20d9051a18788571375f3",
+      "final_state": "done",
+      "reason": "",
+      "final_sequence_markers_present": false,
+      "scene": {
+        "seed": null,
+        "mass_kg": 0.03,
+        "friction": 1.0,
+        "target_initial_position": [
+          0.205,
+          -0.025,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/physical_delivery/before_release_clearance_fix/delivery.mp4",
+        "artifacts/physical_delivery/before_release_clearance_fix/delivery.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/before_release_clearance_fix/seed1000.json",
+      "sha256": "1fe14373845e14141c82db4863a2649adb76a2a4253c5086dc21cf267125db8b",
+      "final_state": "done",
+      "reason": "",
+      "final_sequence_markers_present": false,
+      "scene": {
+        "seed": "1000",
+        "mass_kg": 0.02,
+        "friction": 0.7,
+        "target_initial_position": [
+          0.205342171807601,
+          -0.021884744589810115,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/physical_delivery/before_release_clearance_fix/seed1000.mp4",
+        "artifacts/physical_delivery/before_release_clearance_fix/seed1000.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/before_release_clearance_fix/seed1001.json",
+      "sha256": "f0fb30d68959614d81c32a5dd111c4f19afb3998c96a8039ccd9e29db904acf8",
+      "final_state": "error",
+      "reason": "joint_tracking_timeout: 0.28573426362410204",
+      "final_sequence_markers_present": false,
+      "scene": {
+        "seed": "1001",
+        "mass_kg": 0.04,
+        "friction": 1.3,
+        "target_initial_position": [
+          0.2068015188571192,
+          -0.039528985965390055,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/physical_delivery/before_release_clearance_fix/seed1001.mp4",
+        "artifacts/physical_delivery/before_release_clearance_fix/seed1001.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/delivery.json",
+      "sha256": "46744083a850406a1e0b9c84d89abbc6b3f5b7b264a409adc7683b4769c8c5df",
+      "final_state": "done",
+      "reason": "",
+      "final_sequence_markers_present": true,
+      "scene": {
+        "seed": null,
+        "mass_kg": 0.03,
+        "friction": 1.0,
+        "target_initial_position": [
+          0.205,
+          -0.025,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/physical_delivery/delivery.mp4",
+        "artifacts/physical_delivery/delivery.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/failed_repeat_before_carry_fix.json",
+      "sha256": "899386271eb5eb407137ed0b1b15096841ed6fae308bd2151ffe16d8de54bdc9",
+      "final_state": "error",
+      "reason": "object_dropped_in_transport",
+      "final_sequence_markers_present": false,
+      "scene": {
+        "seed": null,
+        "mass_kg": 0.03,
+        "friction": 1.0,
+        "target_initial_position": [
+          0.205,
+          -0.025,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/physical_delivery/failed_repeat_before_carry_fix.mp4",
+        "artifacts/physical_delivery/failed_repeat_before_carry_fix.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/open_gripper.json",
+      "sha256": "343e750f7836a865368f7f5e01de8791dd1d8a440ed66d6bacff7c1f25a00336",
+      "final_state": "error",
+      "reason": "no_bilateral_contact_at_grasp",
+      "final_sequence_markers_present": false,
+      "scene": {
+        "seed": null,
+        "mass_kg": 0.03,
+        "friction": 1.0,
+        "target_initial_position": [
+          0.205,
+          -0.025,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/physical_delivery/open_gripper.mp4",
+        "artifacts/physical_delivery/open_gripper.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/pre_clearance_results/open_gripper.json",
+      "sha256": "d7a74a857cb62a79fce3fd36b095eda5e7332b469c5b61d22be8731e7c33b237",
+      "final_state": "error",
+      "reason": "no_bilateral_contact_at_grasp",
+      "final_sequence_markers_present": false,
+      "scene": {
+        "seed": null,
+        "mass_kg": 0.03,
+        "friction": 1.0,
+        "target_initial_position": [
+          0.205,
+          -0.025,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/physical_delivery/pre_clearance_results/open_gripper.mp4",
+        "artifacts/physical_delivery/pre_clearance_results/open_gripper.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/pre_clearance_results/seed1000.json",
+      "sha256": "7b61b2fe4e864cbf68303d02e13bde3d42376ae7fe8429fd4a4bfaa5ca0e3b49",
+      "final_state": "done",
+      "reason": "",
+      "final_sequence_markers_present": false,
+      "scene": {
+        "seed": "1000",
+        "mass_kg": 0.02,
+        "friction": 0.7,
+        "target_initial_position": [
+          0.205342171807601,
+          -0.021884744589810115,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/physical_delivery/pre_clearance_results/seed1000.mp4",
+        "artifacts/physical_delivery/pre_clearance_results/seed1000.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/pre_clearance_results/seed1001.json",
+      "sha256": "4be162afa9ff3992e8e9ad245f9d75f51f24db12117a2258263190f324a5e7f8",
+      "final_state": "done",
+      "reason": "",
+      "final_sequence_markers_present": false,
+      "scene": {
+        "seed": "1001",
+        "mass_kg": 0.04,
+        "friction": 1.3,
+        "target_initial_position": [
+          0.2068015188571192,
+          -0.039528985965390055,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/physical_delivery/pre_clearance_results/seed1001.mp4",
+        "artifacts/physical_delivery/pre_clearance_results/seed1001.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/pre_clearance_results/seed1002.json",
+      "sha256": "13770d08830f40bcf4df174f0622de486eaf0bb173180a5b9a95ecb6a7ac62b9",
+      "final_state": "done",
+      "reason": "",
+      "final_sequence_markers_present": false,
+      "scene": {
+        "seed": "1002",
+        "mass_kg": 0.03,
+        "friction": 1.0,
+        "target_initial_position": [
+          0.20309313855172983,
+          -0.029284319869871595,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/physical_delivery/pre_clearance_results/seed1002.mp4",
+        "artifacts/physical_delivery/pre_clearance_results/seed1002.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/seed1000.json",
+      "sha256": "e8eceae59a407d9f75946c36d8f72c28159805993b05df287eee068e78da4db1",
+      "final_state": "done",
+      "reason": "",
+      "final_sequence_markers_present": true,
+      "scene": {
+        "seed": "1000",
+        "mass_kg": 0.02,
+        "friction": 0.7,
+        "target_initial_position": [
+          0.205342171807601,
+          -0.021884744589810115,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/physical_delivery/seed1000.mp4",
+        "artifacts/physical_delivery/seed1000.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/seed1001.json",
+      "sha256": "07243b8203ea776048a75e2587e03a1a75a7f20092af4f529d7810977cbbae66",
+      "final_state": "done",
+      "reason": "",
+      "final_sequence_markers_present": true,
+      "scene": {
+        "seed": "1001",
+        "mass_kg": 0.04,
+        "friction": 1.3,
+        "target_initial_position": [
+          0.2068015188571192,
+          -0.039528985965390055,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/physical_delivery/seed1001.mp4",
+        "artifacts/physical_delivery/seed1001.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/seed1002.json",
+      "sha256": "dd7b4a170fb13a2b37f9c37369f485838afd758c35a10664d1879f87f03f6942",
+      "final_state": "done",
+      "reason": "",
+      "final_sequence_markers_present": true,
+      "scene": {
+        "seed": "1002",
+        "mass_kg": 0.03,
+        "friction": 1.0,
+        "target_initial_position": [
+          0.20309313855172983,
+          -0.029284319869871595,
+          0.071
+        ]
+      },
+      "media": [
+        "artifacts/physical_delivery/seed1002.mp4",
+        "artifacts/physical_delivery/seed1002.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/trial1.json",
+      "sha256": "59af876948c4f41b5f020d537477cc76d237da1f5614f603799f90aab5a885f7",
+      "final_state": "error",
+      "reason": "joint_tracking_timeout: 1.7892321432495368",
+      "final_sequence_markers_present": false,
+      "scene": null,
+      "media": [
+        "artifacts/physical_delivery/trial1.mp4",
+        "artifacts/physical_delivery/trial1.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/trial2.json",
+      "sha256": "86f61dfeb68f62ab486a6bae9eb7f1bceac4424c637e708a2919f3a005c04d12",
+      "final_state": "error",
+      "reason": "joint_tracking_timeout: 0.24080764685949474",
+      "final_sequence_markers_present": false,
+      "scene": null,
+      "media": [
+        "artifacts/physical_delivery/trial2.mp4",
+        "artifacts/physical_delivery/trial2.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/trial3.json",
+      "sha256": "1f7ed0af18cdb6d6ee26bae2e99befad0fff21566a7798a0358a00f076d2d04d",
+      "final_state": "error",
+      "reason": "object_dropped_in_transport",
+      "final_sequence_markers_present": false,
+      "scene": null,
+      "media": [
+        "artifacts/physical_delivery/trial3.mp4",
+        "artifacts/physical_delivery/trial3.png"
+      ]
+    },
+    {
+      "path": "artifacts/physical_delivery/trial4.json",
+      "sha256": "8710151aed7f84279d0e3b97bdba84e783ca42a746695372c14a8f163db3410b",
+      "final_state": "done",
+      "reason": "",
+      "final_sequence_markers_present": false,
+      "scene": null,
+      "media": [
+        "artifacts/physical_delivery/trial4.mp4",
+        "artifacts/physical_delivery/trial4.png"
+      ]
+    }
+  ],
+  "learning_records": [
+    {
+      "folder": "physics_grasp/attempt1_results",
+      "generations": 15,
+      "best_reward": 0.12463629112380632,
+      "summary": {
+        "learned": {
+          "successes": 0,
+          "episodes": 30,
+          "success_rate": 0.0
+        },
+        "initial": {
+          "successes": 0,
+          "episodes": 30,
+          "success_rate": 0.0
+        },
+        "open_gripper_control": {
+          "successes": 0,
+          "episodes": 30,
+          "success_rate": 0.0
+        }
+      }
+    },
+    {
+      "folder": "physics_grasp/attempt2_results",
+      "generations": 16,
+      "best_reward": -0.11627034894503403,
+      "summary": {
+        "learned": {
+          "successes": 0,
+          "episodes": 30,
+          "success_rate": 0.0
+        },
+        "initial": {
+          "successes": 0,
+          "episodes": 30,
+          "success_rate": 0.0
+        },
+        "open_gripper_control": {
+          "successes": 0,
+          "episodes": 30,
+          "success_rate": 0.0
+        }
+      }
+    },
+    {
+      "folder": "physics_grasp/attempt3_results",
+      "generations": 15,
+      "best_reward": 13.712930183103055,
+      "summary": {
+        "learned": {
+          "successes": 30,
+          "episodes": 30,
+          "success_rate": 1.0
+        },
+        "initial": {
+          "successes": 0,
+          "episodes": 30,
+          "success_rate": 0.0
+        },
+        "open_gripper_control": {
+          "successes": 0,
+          "episodes": 30,
+          "success_rate": 0.0
+        }
+      }
+    },
+    {
+      "folder": "physics_grasp/results",
+      "generations": 8,
+      "best_reward": 13.54649937981498,
+      "summary": {
+        "learned": {
+          "successes": 30,
+          "episodes": 30,
+          "success_rate": 1.0
+        },
+        "initial": {
+          "successes": 0,
+          "episodes": 30,
+          "success_rate": 0.0
+        },
+        "open_gripper_control": {
+          "successes": 0,
+          "episodes": 30,
+          "success_rate": 0.0
+        }
+      }
+    }
+  ]
+}

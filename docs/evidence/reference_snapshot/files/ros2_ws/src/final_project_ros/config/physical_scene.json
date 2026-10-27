@@ -1,0 +1,10 @@
+{
+  "seed": null,
+  "mass_kg": 0.03,
+  "friction": 1.0,
+  "target_initial_position": [
+    0.205,
+    -0.025,
+    0.071
+  ]
+}

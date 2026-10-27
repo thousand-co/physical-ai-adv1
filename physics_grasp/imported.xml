@@ -1,0 +1,59 @@
+<mujoco model="crane_plus">
+  <compiler angle="radian" meshdir="assets"/>
+
+  <asset>
+    <mesh name="body_20201013" content_type="model/stl" file="body_20201013.stl"/>
+    <mesh name="body_collision_20201013" content_type="model/stl" file="body_collision_20201013.stl"/>
+    <mesh name="Link1_20201013" content_type="model/stl" file="Link1_20201013.stl"/>
+    <mesh name="Link1_collision_20201013" content_type="model/stl" file="Link1_collision_20201013.stl"/>
+    <mesh name="Link2_20201013" content_type="model/stl" file="Link2_20201013.stl"/>
+    <mesh name="Link2_collision_20201013" content_type="model/stl" file="Link2_collision_20201013.stl"/>
+    <mesh name="Link3_20201013" content_type="model/stl" file="Link3_20201013.stl"/>
+    <mesh name="Link3_collision_20201013" content_type="model/stl" file="Link3_collision_20201013.stl"/>
+    <mesh name="Link4_20201013" content_type="model/stl" file="Link4_20201013.stl"/>
+    <mesh name="Link4_collision_20201013" content_type="model/stl" file="Link4_collision_20201013.stl"/>
+    <mesh name="Hand_20201013" content_type="model/stl" file="Hand_20201013.stl"/>
+    <mesh name="Hand_collision_20201013" content_type="model/stl" file="Hand_collision_20201013.stl"/>
+  </asset>
+
+  <worldbody>
+    <body name="base_link">
+      <body name="crane_plus_base">
+        <inertial pos="-0.0131 7e-06 0.0212" quat="0.591405 0.388067 0.391061 0.588825" mass="0.06645" diaginertia="2.36002e-05 1.79455e-05 1.63543e-05"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="body_20201013"/>
+        <geom type="mesh" rgba="0.2 0.2 0.2 1" mesh="body_collision_20201013"/>
+        <body name="crane_plus_link1" pos="0 0 0.0454">
+          <inertial pos="2e-06 0 0.0109" quat="0.707107 0.707107 -0.000154447 0.000154447" mass="0.007729" diaginertia="3.43e-06 3.05e-06 1.3e-06"/>
+          <joint name="crane_plus_joint1" pos="0 0 0" axis="0 0 1" range="-2.61799 2.61799" actuatorfrcrange="-1.5 1.5" damping="1e-06" frictionloss="0.2"/>
+          <geom quat="1.32679e-06 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.95 0.95 0.95 1" mesh="Link1_20201013"/>
+          <geom quat="1.32679e-06 0 0 1" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Link1_collision_20201013"/>
+          <body name="crane_plus_link2" pos="0 0 0.026">
+            <inertial pos="0.000799 1e-06 0.0415" quat="0.707107 0.707107 0.000222641 0.000233837" mass="0.116745" diaginertia="0.000125 0.000119 1.92e-05"/>
+            <joint name="crane_plus_joint2" pos="0 0 0" axis="0 1 0" range="-1.82474 1.78372" actuatorfrcrange="-1.5 1.5" damping="1e-06" frictionloss="0.2"/>
+            <geom quat="0.707107 0.707106 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="Link2_20201013"/>
+            <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link2_collision_20201013"/>
+            <body name="crane_plus_link3" pos="0 0 0.083">
+              <inertial pos="0.000645 -0.000138 0.0701" quat="0.700958 0.713196 -0.00216014 -0.00207128" mass="0.072317" diaginertia="5.41014e-05 4.69093e-05 1.59894e-05"/>
+              <joint name="crane_plus_joint3" pos="0 0 0" axis="0 -1 0" range="-2.55656 2.45428" actuatorfrcrange="-1.5 1.5" damping="1e-06" frictionloss="0.2"/>
+              <geom quat="0.707107 0.707106 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.95 0.95 0.95 1" mesh="Link3_20201013"/>
+              <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Link3_collision_20201013"/>
+              <body name="crane_plus_link4" pos="0 0 0.0935">
+                <inertial pos="0.000645 -0.00057 0.0462" quat="0.91081 0.41251 -0.00996969 0.0126906" mass="0.08185" diaginertia="5.91092e-05 5.18106e-05 2.41802e-05"/>
+                <joint name="crane_plus_joint4" pos="0 0 0" axis="0 -1 0" range="-1.8401 1.76837" actuatorfrcrange="-1.5 1.5" damping="1e-06" frictionloss="0.2"/>
+                <geom quat="0.707107 0.707106 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="Link4_20201013"/>
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013"/>
+                <body name="crane_plus_link_hand" pos="0 -0.0145 0.045">
+                  <inertial pos="0 -0.0204 0.0277" quat="0.494641 0.494641 0.505302 0.505302" mass="0.022901" diaginertia="2.76099e-05 2.52e-05 5.75006e-06"/>
+                  <joint name="crane_plus_joint_hand" pos="0 0 0" axis="-1 0 0" range="-0.708952 0.667937" actuatorfrcrange="-1.5 1.5" damping="1e-06" frictionloss="0.2"/>
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.95 0.95 0.95 1" mesh="Hand_20201013"/>
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013"/>
+                </body>
+                <body name="crane_plus_link_endtip"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

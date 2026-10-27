@@ -1,0 +1,8 @@
+CRANE+ V2 meshes and URDF-derived kinematics/inertial data:
+Copyright RT Corporation and original crane_plus contributors.
+Source: installed crane_plus_description 2.0.1 from
+/home/ubuntu/airobot_ws/src/crane_plus/crane_plus_description
+Licensed under Apache License 2.0; see CRANE_PLUS_LICENSE.
+Modifications: converted URDF to MuJoCo XML; collision meshes for Link4 and
+Hand decomposed into convex parts with CoACD. Dynamics/actuators and the
+experimental table/box are configured in build_scene.py.

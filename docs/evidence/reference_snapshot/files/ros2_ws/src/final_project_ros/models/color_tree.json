@@ -1,0 +1,22 @@
+{
+  "algorithm": "OpenCV DTrees supervised RGB classifier",
+  "training_seed": 42,
+  "evaluation_seed": 123,
+  "training_samples": 8000,
+  "evaluation_samples": 3200,
+  "synthetic_accuracy": 0.9984375,
+  "per_class_accuracy": {
+    "blue": 1.0,
+    "orange": 1.0,
+    "green": 1.0,
+    "red": 1.0,
+    "purple": 1.0,
+    "brown": 1.0,
+    "pink": 0.995,
+    "gray": 0.99,
+    "olive": 1.0,
+    "cyan": 1.0,
+    "background": 0.9983333333333333
+  },
+  "limitation": "Synthetic palette validation only; not real-world object recognition."
+}

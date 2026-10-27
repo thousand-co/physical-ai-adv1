@@ -1,0 +1,22 @@
+[
+  {
+    "name": "parcel_00",
+    "expected_color": "blue",
+    "start_x": 0.55
+  },
+  {
+    "name": "parcel_01",
+    "expected_color": "red",
+    "start_x": 0.6200000000000001
+  },
+  {
+    "name": "parcel_02",
+    "expected_color": "green",
+    "start_x": 0.6900000000000001
+  },
+  {
+    "name": "parcel_03",
+    "expected_color": "blue",
+    "start_x": 0.76
+  }
+]

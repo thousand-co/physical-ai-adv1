@@ -1,0 +1,18 @@
+{
+  "before": {
+    "final_state": "done",
+    "start_wall_seconds": 3.854436222000004,
+    "grasp_complete_wall_seconds": 13.523797773999831,
+    "initializing_to_grasp_sim_seconds": 9.43,
+    "initializing_to_grasp_wall_seconds": 9.669361551999827
+  },
+  "after": {
+    "final_state": "done",
+    "start_wall_seconds": 3.9564092660002643,
+    "grasp_complete_wall_seconds": 10.070457875001011,
+    "initializing_to_grasp_sim_seconds": 6.030000000000001,
+    "initializing_to_grasp_wall_seconds": 6.114048609000747
+  },
+  "reduction_percent": 36.05514316012724,
+  "scope": "One run per version, same single-target world; initializing to lifting. Joint feedback cumulative travel includes high-frequency simulation noise and is not used as a path-length metric."
+}

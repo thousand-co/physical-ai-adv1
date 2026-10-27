@@ -1,0 +1,254 @@
+<mujoco model="crane_plus">
+  <compiler angle="radian" meshdir="assets" />
+  <asset>
+    <mesh name="body_20201013" content_type="model/stl" file="body_20201013.stl" />
+    <mesh name="body_collision_20201013" content_type="model/stl" file="body_collision_20201013.stl" />
+    <mesh name="Link1_20201013" content_type="model/stl" file="Link1_20201013.stl" />
+    <mesh name="Link1_collision_20201013" content_type="model/stl" file="Link1_collision_20201013.stl" />
+    <mesh name="Link2_20201013" content_type="model/stl" file="Link2_20201013.stl" />
+    <mesh name="Link2_collision_20201013" content_type="model/stl" file="Link2_collision_20201013.stl" />
+    <mesh name="Link3_20201013" content_type="model/stl" file="Link3_20201013.stl" />
+    <mesh name="Link3_collision_20201013" content_type="model/stl" file="Link3_collision_20201013.stl" />
+    <mesh name="Link4_20201013" content_type="model/stl" file="Link4_20201013.stl" />
+    <mesh name="Link4_collision_20201013" content_type="model/stl" file="Link4_collision_20201013.stl" />
+    <mesh name="Hand_20201013" content_type="model/stl" file="Hand_20201013.stl" />
+    <mesh name="Hand_collision_20201013" content_type="model/stl" file="Hand_collision_20201013.stl" />
+    <mesh name="Link4_collision_20201013_part0" file="Link4_collision_20201013/part00.obj" />
+    <mesh name="Link4_collision_20201013_part1" file="Link4_collision_20201013/part01.obj" />
+    <mesh name="Link4_collision_20201013_part2" file="Link4_collision_20201013/part02.obj" />
+    <mesh name="Link4_collision_20201013_part3" file="Link4_collision_20201013/part03.obj" />
+    <mesh name="Link4_collision_20201013_part4" file="Link4_collision_20201013/part04.obj" />
+    <mesh name="Link4_collision_20201013_part5" file="Link4_collision_20201013/part05.obj" />
+    <mesh name="Link4_collision_20201013_part6" file="Link4_collision_20201013/part06.obj" />
+    <mesh name="Link4_collision_20201013_part7" file="Link4_collision_20201013/part07.obj" />
+    <mesh name="Link4_collision_20201013_part8" file="Link4_collision_20201013/part08.obj" />
+    <mesh name="Link4_collision_20201013_part9" file="Link4_collision_20201013/part09.obj" />
+    <mesh name="Link4_collision_20201013_part10" file="Link4_collision_20201013/part10.obj" />
+    <mesh name="Link4_collision_20201013_part11" file="Link4_collision_20201013/part11.obj" />
+    <mesh name="Link4_collision_20201013_part12" file="Link4_collision_20201013/part12.obj" />
+    <mesh name="Link4_collision_20201013_part13" file="Link4_collision_20201013/part13.obj" />
+    <mesh name="Link4_collision_20201013_part14" file="Link4_collision_20201013/part14.obj" />
+    <mesh name="Link4_collision_20201013_part15" file="Link4_collision_20201013/part15.obj" />
+    <mesh name="Link4_collision_20201013_part16" file="Link4_collision_20201013/part16.obj" />
+    <mesh name="Link4_collision_20201013_part17" file="Link4_collision_20201013/part17.obj" />
+    <mesh name="Link4_collision_20201013_part18" file="Link4_collision_20201013/part18.obj" />
+    <mesh name="Link4_collision_20201013_part19" file="Link4_collision_20201013/part19.obj" />
+    <mesh name="Link4_collision_20201013_part20" file="Link4_collision_20201013/part20.obj" />
+    <mesh name="Link4_collision_20201013_part21" file="Link4_collision_20201013/part21.obj" />
+    <mesh name="Link4_collision_20201013_part22" file="Link4_collision_20201013/part22.obj" />
+    <mesh name="Link4_collision_20201013_part23" file="Link4_collision_20201013/part23.obj" />
+    <mesh name="Link4_collision_20201013_part24" file="Link4_collision_20201013/part24.obj" />
+    <mesh name="Link4_collision_20201013_part25" file="Link4_collision_20201013/part25.obj" />
+    <mesh name="Link4_collision_20201013_part26" file="Link4_collision_20201013/part26.obj" />
+    <mesh name="Link4_collision_20201013_part27" file="Link4_collision_20201013/part27.obj" />
+    <mesh name="Link4_collision_20201013_part28" file="Link4_collision_20201013/part28.obj" />
+    <mesh name="Link4_collision_20201013_part29" file="Link4_collision_20201013/part29.obj" />
+    <mesh name="Link4_collision_20201013_part30" file="Link4_collision_20201013/part30.obj" />
+    <mesh name="Link4_collision_20201013_part31" file="Link4_collision_20201013/part31.obj" />
+    <mesh name="Link4_collision_20201013_part32" file="Link4_collision_20201013/part32.obj" />
+    <mesh name="Link4_collision_20201013_part33" file="Link4_collision_20201013/part33.obj" />
+    <mesh name="Link4_collision_20201013_part34" file="Link4_collision_20201013/part34.obj" />
+    <mesh name="Link4_collision_20201013_part35" file="Link4_collision_20201013/part35.obj" />
+    <mesh name="Link4_collision_20201013_part36" file="Link4_collision_20201013/part36.obj" />
+    <mesh name="Link4_collision_20201013_part37" file="Link4_collision_20201013/part37.obj" />
+    <mesh name="Link4_collision_20201013_part38" file="Link4_collision_20201013/part38.obj" />
+    <mesh name="Link4_collision_20201013_part39" file="Link4_collision_20201013/part39.obj" />
+    <mesh name="Link4_collision_20201013_part40" file="Link4_collision_20201013/part40.obj" />
+    <mesh name="Link4_collision_20201013_part41" file="Link4_collision_20201013/part41.obj" />
+    <mesh name="Link4_collision_20201013_part42" file="Link4_collision_20201013/part42.obj" />
+    <mesh name="Link4_collision_20201013_part43" file="Link4_collision_20201013/part43.obj" />
+    <mesh name="Link4_collision_20201013_part44" file="Link4_collision_20201013/part44.obj" />
+    <mesh name="Link4_collision_20201013_part45" file="Link4_collision_20201013/part45.obj" />
+    <mesh name="Link4_collision_20201013_part46" file="Link4_collision_20201013/part46.obj" />
+    <mesh name="Link4_collision_20201013_part47" file="Link4_collision_20201013/part47.obj" />
+    <mesh name="Link4_collision_20201013_part48" file="Link4_collision_20201013/part48.obj" />
+    <mesh name="Hand_collision_20201013_part0" file="Hand_collision_20201013/part00.obj" />
+    <mesh name="Hand_collision_20201013_part1" file="Hand_collision_20201013/part01.obj" />
+    <mesh name="Hand_collision_20201013_part2" file="Hand_collision_20201013/part02.obj" />
+    <mesh name="Hand_collision_20201013_part3" file="Hand_collision_20201013/part03.obj" />
+    <mesh name="Hand_collision_20201013_part4" file="Hand_collision_20201013/part04.obj" />
+    <mesh name="Hand_collision_20201013_part5" file="Hand_collision_20201013/part05.obj" />
+    <mesh name="Hand_collision_20201013_part6" file="Hand_collision_20201013/part06.obj" />
+    <mesh name="Hand_collision_20201013_part7" file="Hand_collision_20201013/part07.obj" />
+    <mesh name="Hand_collision_20201013_part8" file="Hand_collision_20201013/part08.obj" />
+    <mesh name="Hand_collision_20201013_part9" file="Hand_collision_20201013/part09.obj" />
+    <mesh name="Hand_collision_20201013_part10" file="Hand_collision_20201013/part10.obj" />
+    <mesh name="Hand_collision_20201013_part11" file="Hand_collision_20201013/part11.obj" />
+    <mesh name="Hand_collision_20201013_part12" file="Hand_collision_20201013/part12.obj" />
+    <mesh name="Hand_collision_20201013_part13" file="Hand_collision_20201013/part13.obj" />
+    <mesh name="Hand_collision_20201013_part14" file="Hand_collision_20201013/part14.obj" />
+    <mesh name="Hand_collision_20201013_part15" file="Hand_collision_20201013/part15.obj" />
+    <mesh name="Hand_collision_20201013_part16" file="Hand_collision_20201013/part16.obj" />
+    <mesh name="Hand_collision_20201013_part17" file="Hand_collision_20201013/part17.obj" />
+    <mesh name="Hand_collision_20201013_part18" file="Hand_collision_20201013/part18.obj" />
+    <mesh name="Hand_collision_20201013_part19" file="Hand_collision_20201013/part19.obj" />
+    <mesh name="Hand_collision_20201013_part20" file="Hand_collision_20201013/part20.obj" />
+    <mesh name="Hand_collision_20201013_part21" file="Hand_collision_20201013/part21.obj" />
+    <mesh name="Hand_collision_20201013_part22" file="Hand_collision_20201013/part22.obj" />
+    <mesh name="Hand_collision_20201013_part23" file="Hand_collision_20201013/part23.obj" />
+    <mesh name="Hand_collision_20201013_part24" file="Hand_collision_20201013/part24.obj" />
+    <mesh name="Hand_collision_20201013_part25" file="Hand_collision_20201013/part25.obj" />
+    <mesh name="Hand_collision_20201013_part26" file="Hand_collision_20201013/part26.obj" />
+    <mesh name="Hand_collision_20201013_part27" file="Hand_collision_20201013/part27.obj" />
+    <mesh name="Hand_collision_20201013_part28" file="Hand_collision_20201013/part28.obj" />
+    <mesh name="Hand_collision_20201013_part29" file="Hand_collision_20201013/part29.obj" />
+    <mesh name="Hand_collision_20201013_part30" file="Hand_collision_20201013/part30.obj" />
+    <mesh name="Hand_collision_20201013_part31" file="Hand_collision_20201013/part31.obj" />
+    <mesh name="Hand_collision_20201013_part32" file="Hand_collision_20201013/part32.obj" />
+    <mesh name="Hand_collision_20201013_part33" file="Hand_collision_20201013/part33.obj" />
+    <mesh name="Hand_collision_20201013_part34" file="Hand_collision_20201013/part34.obj" />
+    <mesh name="Hand_collision_20201013_part35" file="Hand_collision_20201013/part35.obj" />
+    <mesh name="Hand_collision_20201013_part36" file="Hand_collision_20201013/part36.obj" />
+    <mesh name="Hand_collision_20201013_part37" file="Hand_collision_20201013/part37.obj" />
+    <mesh name="Hand_collision_20201013_part38" file="Hand_collision_20201013/part38.obj" />
+    <mesh name="Hand_collision_20201013_part39" file="Hand_collision_20201013/part39.obj" />
+  </asset>
+  <worldbody>
+    <body name="base_link">
+      <body name="crane_plus_base">
+        <inertial pos="-0.0131 7e-06 0.0212" quat="0.591405 0.388067 0.391061 0.588825" mass="0.06645" diaginertia="2.36002e-05 1.79455e-05 1.63543e-05" />
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="body_20201013" />
+        <geom type="mesh" rgba="0.2 0.2 0.2 1" mesh="body_collision_20201013" contype="2" conaffinity="1" group="3" />
+        <body name="crane_plus_link1" pos="0 0 0.0454">
+          <inertial pos="2e-06 0 0.0109" quat="0.707107 0.707107 -0.000154447 0.000154447" mass="0.007729" diaginertia="3.43e-06 3.05e-06 1.3e-06" />
+          <joint name="crane_plus_joint1" pos="0 0 0" axis="0 0 1" range="-2.61799 2.61799" actuatorfrcrange="-1.5 1.5" damping="0.3" frictionloss="0.02" />
+          <geom quat="1.32679e-06 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.95 0.95 0.95 1" mesh="Link1_20201013" />
+          <geom quat="1.32679e-06 0 0 1" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Link1_collision_20201013" contype="2" conaffinity="1" group="3" />
+          <body name="crane_plus_link2" pos="0 0 0.026">
+            <inertial pos="0.000799 1e-06 0.0415" quat="0.707107 0.707107 0.000222641 0.000233837" mass="0.116745" diaginertia="0.000125 0.000119 1.92e-05" />
+            <joint name="crane_plus_joint2" pos="0 0 0" axis="0 1 0" range="-1.82474 1.78372" actuatorfrcrange="-1.5 1.5" damping="0.3" frictionloss="0.02" />
+            <geom quat="0.707107 0.707106 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="Link2_20201013" />
+            <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link2_collision_20201013" contype="2" conaffinity="1" group="3" />
+            <body name="crane_plus_link3" pos="0 0 0.083">
+              <inertial pos="0.000645 -0.000138 0.0701" quat="0.700958 0.713196 -0.00216014 -0.00207128" mass="0.072317" diaginertia="5.41014e-05 4.69093e-05 1.59894e-05" />
+              <joint name="crane_plus_joint3" pos="0 0 0" axis="0 -1 0" range="-2.55656 2.45428" actuatorfrcrange="-1.5 1.5" damping="0.3" frictionloss="0.02" />
+              <geom quat="0.707107 0.707106 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.95 0.95 0.95 1" mesh="Link3_20201013" />
+              <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Link3_collision_20201013" contype="2" conaffinity="1" group="3" />
+              <body name="crane_plus_link4" pos="0 0 0.0935">
+                <inertial pos="0.000645 -0.00057 0.0462" quat="0.91081 0.41251 -0.00996969 0.0126906" mass="0.08185" diaginertia="5.91092e-05 5.18106e-05 2.41802e-05" />
+                <joint name="crane_plus_joint4" pos="0 0 0" axis="0 -1 0" range="-1.8401 1.76837" actuatorfrcrange="-1.5 1.5" damping="0.3" frictionloss="0.02" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="Link4_20201013" />
+                <body name="crane_plus_link_hand" pos="0 -0.0145 0.045">
+                  <inertial pos="0 -0.0204 0.0277" quat="0.494641 0.494641 0.505302 0.505302" mass="0.022901" diaginertia="2.76099e-05 2.52e-05 5.75006e-06" />
+                  <joint name="crane_plus_joint_hand" pos="0 0 0" axis="-1 0 0" range="-0.708952 0.667937" actuatorfrcrange="-1.5 1.5" damping="0.3" frictionloss="0.02" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.95 0.95 0.95 1" mesh="Hand_20201013" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part0" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part0" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part1" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part1" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part2" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part2" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part3" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part3" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part4" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part4" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part5" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part5" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part6" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part6" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part7" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part7" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part8" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part8" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part9" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part9" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part10" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part10" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part11" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part11" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part12" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part12" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part13" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part13" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part14" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part14" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part15" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part15" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part16" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part16" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part17" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part17" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part18" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part18" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part19" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part19" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part20" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part20" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part21" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part21" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part22" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part22" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part23" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part23" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part24" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part24" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part25" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part25" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part26" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part26" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part27" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part27" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part28" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part28" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part29" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part29" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part30" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part30" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part31" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part31" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part32" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part32" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part33" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part33" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part34" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part34" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part35" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part35" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part36" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part36" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part37" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part37" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part38" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part38" />
+                  <geom quat="0.707107 0 -0.707106 0" type="mesh" rgba="0.95 0.95 0.95 1" mesh="Hand_collision_20201013_part39" contype="2" conaffinity="1" group="3" name="Hand_collision_20201013_part39" />
+                </body>
+                <body name="crane_plus_link_endtip" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part0" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part0" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part1" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part1" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part2" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part2" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part3" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part3" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part4" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part4" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part5" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part5" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part6" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part6" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part7" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part7" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part8" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part8" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part9" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part9" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part10" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part10" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part11" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part11" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part12" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part12" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part13" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part13" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part14" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part14" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part15" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part15" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part16" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part16" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part17" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part17" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part18" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part18" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part19" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part19" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part20" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part20" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part21" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part21" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part22" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part22" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part23" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part23" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part24" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part24" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part25" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part25" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part26" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part26" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part27" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part27" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part28" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part28" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part29" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part29" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part30" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part30" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part31" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part31" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part32" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part32" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part33" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part33" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part34" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part34" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part35" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part35" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part36" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part36" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part37" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part37" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part38" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part38" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part39" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part39" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part40" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part40" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part41" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part41" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part42" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part42" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part43" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part43" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part44" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part44" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part45" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part45" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part46" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part46" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part47" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part47" />
+                <geom quat="0.707107 0.707106 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="Link4_collision_20201013_part48" contype="2" conaffinity="1" group="3" name="Link4_collision_20201013_part48" />
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <light pos="0 -0.3 1.5" dir="0 0 -1" diffuse="0.9 0.9 0.9" />
+    <geom name="table" type="plane" size="0.6 0.6 0.02" rgba="0.65 0.68 0.7 1" contype="1" conaffinity="3" />
+    <body name="blue_box" pos="0.15 0.05 0.02">
+      <freejoint name="box_free" />
+      <geom name="box" type="box" size="0.02 0.02 0.02" mass="0.03" rgba="0.08 0.35 0.9 1" contype="1" conaffinity="3" />
+    </body>
+  </worldbody>
+  <option timestep="0.002" integrator="implicitfast" cone="elliptic" iterations="80" />
+  <visual>
+    <global offwidth="960" offheight="720" />
+  </visual>
+  <default>
+    <geom friction="1.0 0.01 0.001" solref="0.006 1" solimp="0.95 0.99 0.001" condim="4" />
+    <joint armature="0.002" damping="0.3" />
+  </default>
+  <actuator>
+    <position name="crane_plus_joint1" joint="crane_plus_joint1" kp="35" kv="1.5" ctrllimited="true" ctrlrange="-2.61799 2.61799" forcelimited="true" forcerange="-1.5 1.5" />
+    <position name="crane_plus_joint2" joint="crane_plus_joint2" kp="35" kv="1.5" ctrllimited="true" ctrlrange="-1.82474 1.78372" forcelimited="true" forcerange="-1.5 1.5" />
+    <position name="crane_plus_joint3" joint="crane_plus_joint3" kp="35" kv="1.5" ctrllimited="true" ctrlrange="-2.55656 2.45428" forcelimited="true" forcerange="-1.5 1.5" />
+    <position name="crane_plus_joint4" joint="crane_plus_joint4" kp="35" kv="1.5" ctrllimited="true" ctrlrange="-1.8401 1.76837" forcelimited="true" forcerange="-1.5 1.5" />
+    <position name="crane_plus_joint_hand" joint="crane_plus_joint_hand" kp="35" kv="1.5" ctrllimited="true" ctrlrange="-0.708952 0.667937" forcelimited="true" forcerange="-1.5 1.5" />
+  </actuator>
+</mujoco>

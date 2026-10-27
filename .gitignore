@@ -1,0 +1,28 @@
+.simdeps/
+__pycache__/
+*.py[cod]
+**/build/
+**/install/
+**/log/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+.env
+.env.*
+!.env.example
+.aws/
+*.pem
+*.key
+.DS_Store
+.vscode/
+.idea/
+# Rebuild from committed sources and recorded evidence.
+submission/*.mp4
+submission/*.pdf
+submission/*.zip
+docs/開発・学習ガイド.pdf
+# Regenerated from the external CRANE+ workspace; contains absolute paths.
+ros2_ws/src/final_project_ros/config/physical_crane.urdf
+ros2_ws/src/final_project_ros/config/physical_controllers.yaml
+physics_grasp/crane.urdf

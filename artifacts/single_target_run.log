@@ -1,0 +1,357 @@
+Starting >>> final_project_ros
+Finished <<< final_project_ros [1.00s]
+
+Summary: 1 package finished [1.22s]
+[INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2026-10-25-14-22-25-326746-3642482ea9d3-76011
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [record_demo-1]: process started with pid [76013]
+[INFO] [gzserver-2]: process started with pid [76015]
+[INFO] [robot_state_publisher-3]: process started with pid [76017]
+[INFO] [move_group-4]: process started with pid [76019]
+[INFO] [spawn_entity.py-5]: process started with pid [76021]
+[move_group-4] [WARN] [1792938145.893081870] [move_group.move_group]: Falling back to using the the move_group node namespace (deprecated behavior).
+[robot_state_publisher-3] [INFO] [1792938145.903137941] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1792938145.903260852] [robot_state_publisher]: got segment crane_plus_base
+[robot_state_publisher-3] [INFO] [1792938145.903267160] [robot_state_publisher]: got segment crane_plus_link1
+[robot_state_publisher-3] [INFO] [1792938145.903270593] [robot_state_publisher]: got segment crane_plus_link2
+[robot_state_publisher-3] [INFO] [1792938145.903273565] [robot_state_publisher]: got segment crane_plus_link3
+[robot_state_publisher-3] [INFO] [1792938145.903276788] [robot_state_publisher]: got segment crane_plus_link4
+[robot_state_publisher-3] [INFO] [1792938145.903279637] [robot_state_publisher]: got segment crane_plus_link_endtip
+[robot_state_publisher-3] [INFO] [1792938145.903282964] [robot_state_publisher]: got segment crane_plus_link_hand
+[robot_state_publisher-3] [INFO] [1792938145.903286367] [robot_state_publisher]: got segment world
+[move_group-4] [INFO] [1792938145.918651458] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0 seconds
+[move_group-4] [INFO] [1792938145.918698247] [moveit_robot_model.robot_model]: Loading robot model 'crane_plus'...
+[gzserver-2] Gazebo multi-robot simulator, version 11.10.2
+[gzserver-2] Copyright (C) 2012 Open Source Robotics Foundation.
+[gzserver-2] Released under the Apache 2 License.
+[gzserver-2] http://gazebosim.org
+[gzserver-2] 
+[move_group-4] [INFO] [1792938146.089058484] [moveit.ros_planning_interface.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-4] [INFO] [1792938146.089991482] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-4] [INFO] [1792938146.091802777] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-4] [INFO] [1792938146.092269784] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-4] [INFO] [1792938146.092444506] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[move_group-4] [INFO] [1792938146.092983910] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-4] [INFO] [1792938146.093007938] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-4] [INFO] [1792938146.093257646] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-4] [INFO] [1792938146.093598932] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-4] [WARN] [1792938146.094304151] [moveit.ros.occupancy_map_monitor.middleware_handle]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-4] [ERROR] [1792938146.094330119] [moveit.ros.occupancy_map_monitor.middleware_handle]: No 3D sensor plugin(s) defined for octomap updates
+[spawn_entity.py-5] [INFO] [1792938146.130196753] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-5] [INFO] [1792938146.130539307] [spawn_entity]: Loading entity published on topic robot_description
+[spawn_entity.py-5] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/qos.py:307: UserWarning: DurabilityPolicy.RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL is deprecated. Use DurabilityPolicy.TRANSIENT_LOCAL instead.
+[spawn_entity.py-5]   warnings.warn(
+[spawn_entity.py-5] [INFO] [1792938146.132041102] [spawn_entity]: Waiting for entity xml on robot_description
+[spawn_entity.py-5] [INFO] [1792938146.133810033] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-5] [INFO] [1792938146.134017652] [spawn_entity]: Waiting for service /spawn_entity
+[move_group-4] [INFO] [1792938146.138204103] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'move_group'
+[move_group-4] [INFO] [1792938146.140447291] [moveit.ros_planning.planning_pipeline]: Multiple planning plugins available. You should specify the '~planning_plugin' parameter. Using 'ompl_interface/OMPLPlanner' for now.
+[move_group-4] [INFO] [1792938146.146999878] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
+[move_group-4] [WARN] [1792938146.150226162] [moveit_ros.trajectory_execution_manager]: Parameter '~moveit_controller_manager' is not specified but only one matching plugin was found: 'moveit_simple_controller_manager/MoveItSimpleControllerManager'. Using that one.
+[move_group-4] [WARN] [1792938146.150375735] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[move_group-4] [ERROR] [1792938146.155974852] [moveit.plugins.moveit_simple_controller_manager]: No controller_names specified.
+[move_group-4] [INFO] [1792938146.156118890] [moveit.plugins.moveit_simple_controller_manager]: Returned 0 controllers in list
+[move_group-4] [INFO] [1792938146.156127208] [moveit.plugins.moveit_simple_controller_manager]: Returned 0 controllers in list
+[move_group-4] [INFO] [1792938146.156495294] [moveit_ros.trajectory_execution_manager]: Trajectory execution is not managing controllers
+[move_group-4] [INFO] [1792938146.156521584] [move_group.move_group]: MoveGroup debug mode is ON
+[move_group-4] [INFO] [1792938146.170219153] [move_group.move_group]: 
+[move_group-4] 
+[move_group-4] ********************************************************
+[move_group-4] * MoveGroup using: 
+[move_group-4] *     - ApplyPlanningSceneService
+[move_group-4] *     - ClearOctomapService
+[move_group-4] *     - CartesianPathService
+[move_group-4] *     - ExecuteTrajectoryAction
+[move_group-4] *     - GetPlanningSceneService
+[move_group-4] *     - KinematicsService
+[move_group-4] *     - MoveAction
+[move_group-4] *     - MotionPlanService
+[move_group-4] *     - QueryPlannersService
+[move_group-4] *     - StateValidationService
+[move_group-4] ********************************************************
+[move_group-4] 
+[move_group-4] [INFO] [1792938146.170294987] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
+[move_group-4] [INFO] [1792938146.170333285] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context initialization complete
+[move_group-4] [96mLoading 'move_group/ApplyPlanningSceneService'...
+[move_group-4] [0m[96mLoading 'move_group/ClearOctomapService'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupCartesianPathService'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupExecuteTrajectoryAction'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupGetPlanningSceneService'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupKinematicsService'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupMoveAction'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupPlanService'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupQueryPlannersService'...
+[move_group-4] [0m[96mLoading 'move_group/MoveGroupStateValidationService'...
+[move_group-4] [0m[92m
+[move_group-4] You can start planning now!
+[move_group-4] 
+[gzserver-2] Home directory not accessible: Permission denied
+[gzserver-2] Home directory not accessible: Permission denied
+[gzserver-2] ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+[gzserver-2] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+[gzserver-2] ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+[gzserver-2] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+[gzserver-2] ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+[gzserver-2] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+[gzserver-2] ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+[gzserver-2] ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+[gzserver-2] AL lib: (EE) ALCplaybackAlsa_open: Could not open playback device 'default': No such file or directory
+[gzserver-2] [1;31m[Err] [OpenAL.cc:84] [0m[1;31mUnable to open audio device[[0m[1;31mdefault[0m[1;31m]
+[gzserver-2]  Audio will be disabled.
+[gzserver-2] [1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[gzserver-2] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[gzserver-2] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m172.17.0.2[0m[1;32m
+[gzserver-2] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/home/ubuntu/final_pj/final_project_ros/ros2_ws/install/final_project_ros/share/final_project_ros/worlds/simple_delivery.world[0m[1;32m][0m[1;32m
+[spawn_entity.py-5] [INFO] [1792938146.637296084] [spawn_entity]: Calling service /spawn_entity
+[gzserver-2] [0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[gzserver-2] [0m[INFO] [1792938147.602221509] [camera.camera_controller]: Publishing camera info to [/camera/color/camera_info]
+[gzserver-2] [INFO] [1792938147.614369294] [gazebo.gazebo_ros_state]: Publishing states of gazebo models at [/gazebo/model_states]
+[gzserver-2] [INFO] [1792938147.614852783] [gazebo.gazebo_ros_state]: Publishing states of gazebo links at [/gazebo/link_states]
+[spawn_entity.py-5] [INFO] [1792938147.666019197] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [crane_plus]
+[gzserver-2] [INFO] [1792938147.748875512] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+[gzserver-2] [INFO] [1792938147.753021212] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+[gzserver-2] [INFO] [1792938147.753119069] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+[gzserver-2] [INFO] [1792938147.755693122] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+[gzserver-2] [INFO] [1792938147.756157920] [gazebo_ros2_control]: Received urdf from param server, parsing...
+[gzserver-2] [INFO] [1792938147.756227986] [gazebo_ros2_control]: Loading parameter files /home/ubuntu/airobot_ws/install/crane_plus_control/share/crane_plus_control/config/crane_plus_controllers.yaml
+[gzserver-2] [INFO] [1792938147.766619979] [gazebo_ros2_control]: Loading joint: crane_plus_joint1
+[gzserver-2] [INFO] [1792938147.766680342] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792938147.766687690] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792938147.766693970] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792938147.766698391] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792938147.766702559] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792938147.766706309] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792938147.767064392] [gazebo_ros2_control]: Loading joint: crane_plus_joint2
+[gzserver-2] [INFO] [1792938147.767082426] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792938147.767088055] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792938147.767092665] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792938147.767096790] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792938147.767100703] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792938147.767104362] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792938147.767349151] [gazebo_ros2_control]: Loading joint: crane_plus_joint3
+[gzserver-2] [INFO] [1792938147.767361964] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792938147.767367124] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792938147.767371320] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792938147.767375134] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792938147.767379614] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792938147.767383466] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792938147.767588468] [gazebo_ros2_control]: Loading joint: crane_plus_joint4
+[gzserver-2] [INFO] [1792938147.767598937] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792938147.767604780] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792938147.767609536] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792938147.767613297] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792938147.767617082] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792938147.767620984] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792938147.767820375] [gazebo_ros2_control]: Loading joint: crane_plus_joint_hand
+[gzserver-2] [INFO] [1792938147.767840538] [gazebo_ros2_control]: 	State:
+[gzserver-2] [INFO] [1792938147.767845083] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792938147.767849076] [gazebo_ros2_control]: 		 velocity
+[gzserver-2] [INFO] [1792938147.767852689] [gazebo_ros2_control]: 		 effort
+[gzserver-2] [INFO] [1792938147.767856417] [gazebo_ros2_control]: 	Command:
+[gzserver-2] [INFO] [1792938147.767859965] [gazebo_ros2_control]: 		 position
+[gzserver-2] [INFO] [1792938147.768186933] [resource_manager]: Initialize hardware 'crane_plus' 
+[gzserver-2] [INFO] [1792938147.768311061] [resource_manager]: Successful initialization of hardware 'crane_plus'
+[gzserver-2] [INFO] [1792938147.768371471] [resource_manager]: 'configure' hardware 'crane_plus' 
+[gzserver-2] [INFO] [1792938147.768377644] [resource_manager]: Successful 'configure' of hardware 'crane_plus'
+[gzserver-2] [INFO] [1792938147.768382305] [resource_manager]: 'activate' hardware 'crane_plus' 
+[gzserver-2] [INFO] [1792938147.768385399] [resource_manager]: Successful 'activate' of hardware 'crane_plus'
+[gzserver-2] [INFO] [1792938147.768446030] [gazebo_ros2_control]: Loading controller_manager
+[gzserver-2] [WARN] [1792938147.787135653] [gazebo_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gzserver-2] [INFO] [1792938147.787611377] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+[gzserver-2] Error:   Could not find the 'robot' element in the xml file
+[gzserver-2]          at line 109 in ./urdf_parser/src/model.cpp
+[gzserver-2] [1;31mError [parser_urdf.cc:3183][0m Unable to call parseURDF on robot model
+[gzserver-2] [1;31mError [parser.cc:488][0m parse as old deprecated model file failed.
+[INFO] [spawn_entity.py-5]: process has finished cleanly [pid 76021]
+[INFO] [spawner-6]: process started with pid [76250]
+[gzserver-2] [INFO] [1792938148.198038889] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[spawner-6] [INFO] [1792938148.227919824] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gzserver-2] [INFO] [1792938148.229202679] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[gzserver-2] [INFO] [1792938148.229505870] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawner-6] [INFO] [1792938148.262502649] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[INFO] [spawner-6]: process has finished cleanly [pid 76250]
+[INFO] [spawner-7]: process started with pid [76313]
+[gzserver-2] [INFO] [1792938148.788232753] [controller_manager]: Loading controller 'crane_plus_arm_controller'
+[gzserver-2] [WARN] [1792938148.809168058] [crane_plus_arm_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[spawner-7] [INFO] [1792938148.821941531] [spawner_crane_plus_arm_controller]: [94mLoaded [1mcrane_plus_arm_controller[0m
+[gzserver-2] [INFO] [1792938148.822801160] [controller_manager]: Configuring controller 'crane_plus_arm_controller'
+[gzserver-2] [INFO] [1792938148.822991778] [crane_plus_arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gzserver-2] [INFO] [1792938148.823046085] [crane_plus_arm_controller]: Command interfaces are [position] and state interfaces are [position].
+[gzserver-2] [INFO] [1792938148.823098029] [crane_plus_arm_controller]: Using 'splines' interpolation method.
+[gzserver-2] [INFO] [1792938148.823999256] [crane_plus_arm_controller]: Controller state will be published at 50.00 Hz.
+[gzserver-2] [INFO] [1792938148.825443694] [crane_plus_arm_controller]: Action status changes will be monitored at 20.00 Hz.
+[spawner-7] [INFO] [1792938148.849894718] [spawner_crane_plus_arm_controller]: [92mConfigured and activated [1mcrane_plus_arm_controller[0m
+[INFO] [spawner-7]: process has finished cleanly [pid 76313]
+[INFO] [spawner-8]: process started with pid [76355]
+[gzserver-2] [INFO] [1792938149.374974914] [controller_manager]: Loading controller 'crane_plus_gripper_controller'
+[gzserver-2] [WARN] [1792938149.383511283] [crane_plus_gripper_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[spawner-8] [INFO] [1792938149.399436472] [spawner_crane_plus_gripper_controller]: [94mLoaded [1mcrane_plus_gripper_controller[0m
+[gzserver-2] [INFO] [1792938149.400272848] [controller_manager]: Configuring controller 'crane_plus_gripper_controller'
+[gzserver-2] [INFO] [1792938149.400358929] [crane_plus_gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gzserver-2] [INFO] [1792938149.400370654] [crane_plus_gripper_controller]: Command interfaces are [position] and state interfaces are [position].
+[gzserver-2] [INFO] [1792938149.400379048] [crane_plus_gripper_controller]: Using 'splines' interpolation method.
+[gzserver-2] [INFO] [1792938149.400677408] [crane_plus_gripper_controller]: Controller state will be published at 50.00 Hz.
+[gzserver-2] [INFO] [1792938149.401957996] [crane_plus_gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+[spawner-8] [INFO] [1792938149.429659083] [spawner_crane_plus_gripper_controller]: [92mConfigured and activated [1mcrane_plus_gripper_controller[0m
+[INFO] [spawner-8]: process has finished cleanly [pid 76355]
+[INFO] [gazebo_delivery_demo-9]: process started with pid [76384]
+[INFO] [delivery_controller-10]: process started with pid [76386]
+[gazebo_delivery_demo-9] [INFO] [1792938150.034417251] [gazebo_delivery_demo]: Learned RGB decision tree ready; Gazebo delivery demo: target_color=blue image_topic=/camera/color/image_raw min_contour_area=80.0
+[delivery_controller-10] [INFO] [1792938150.057571752] [delivery_controller]: Task state: initializing
+[delivery_controller-10] [INFO] [1792938150.060227509] [delivery_controller]: Task state: homing
+[gazebo_delivery_demo-9] [INFO] [1792938150.090152212] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[delivery_controller-10] [INFO] [1792938153.122752074] [delivery_controller]: Task state: waiting_for_object
+[delivery_controller-10] [INFO] [1792938153.222139730] [delivery_controller]: Task state: target_detected
+[delivery_controller-10] [INFO] [1792938153.323535954] [delivery_controller]: Task state: approaching_target
+[gazebo_delivery_demo-9] [INFO] [1792938155.187454903] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938156.520204669] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[delivery_controller-10] [INFO] [1792938156.541828228] [delivery_controller]: Task state: grasping
+[gazebo_delivery_demo-9] [INFO] [1792938156.937050808] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938157.245627684] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938157.867868434] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[delivery_controller-10] [INFO] [1792938159.053096881] [delivery_controller]: Task state: closing_gripper
+[delivery_controller-10] [INFO] [1792938160.066044728] [delivery_controller]: Kinematic grasp enabled for the Gazebo demo; following the endtip until release
+[delivery_controller-10] [INFO] [1792938160.170237480] [delivery_controller]: Task state: lifting
+[gazebo_delivery_demo-9] [INFO] [1792938160.459997287] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[delivery_controller-10] [INFO] [1792938162.073583561] [delivery_controller]: Task state: placing_in_box
+[gazebo_delivery_demo-9] [INFO] [1792938163.419474721] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938164.388974682] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938165.103346516] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938166.594192569] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938167.244826221] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938168.043752810] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938168.543860889] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938170.181048029] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938171.300774917] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938172.026573061] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938172.840709117] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938173.266536339] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938174.572725141] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938174.952872706] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938175.861733890] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938176.437685540] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938177.321422197] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938177.886988348] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938179.005204553] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938180.090978763] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938180.791736857] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938182.220154332] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938182.811056743] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938183.292604228] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[delivery_controller-10] [INFO] [1792938183.584911726] [delivery_controller]: Task state: releasing
+[gazebo_delivery_demo-9] [INFO] [1792938184.649259966] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938185.847257756] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[delivery_controller-10] [INFO] [1792938186.300885190] [delivery_controller]: Delivered 1/1 blue target(s)
+[delivery_controller-10] [INFO] [1792938186.301261816] [delivery_controller]: Task state: done
+[delivery_controller-10] [INFO] [1792938186.301468889] [delivery_controller]: Delivery complete: all blue targets are inside the goal box
+[gazebo_delivery_demo-9] [INFO] [1792938186.770109922] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938187.140479746] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938188.022944263] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938188.595267543] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938189.400360831] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938190.619016538] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[INFO] [record_demo-1]: process has finished cleanly [pid 76013]
+[gazebo_delivery_demo-9] [INFO] [1792938191.553022968] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938192.772528146] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938193.480336703] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938194.958019543] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938195.747132029] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938196.780185713] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938197.125167380] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938198.246733445] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938200.494449291] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938201.930692629] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938202.810653694] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938203.158725404] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938203.660183762] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938204.177060230] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938204.676895364] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938205.695090065] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938207.156724890] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938208.066868542] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938208.573857002] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938209.476867857] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938211.314091285] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938212.025389790] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938212.518930038] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938213.653388951] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938214.138458949] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938215.179534251] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938215.635407644] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938216.891040950] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[gazebo_delivery_demo-9] [INFO] [1792938217.388360632] [gazebo_delivery_demo]: Detected 1 blue target(s) in camera image
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [delivery_controller-10]: sending signal 'SIGINT' to process[delivery_controller-10]
+[INFO] [gazebo_delivery_demo-9]: sending signal 'SIGINT' to process[gazebo_delivery_demo-9]
+[INFO] [move_group-4]: sending signal 'SIGINT' to process[move_group-4]
+[INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+[INFO] [gzserver-2]: sending signal 'SIGINT' to process[gzserver-2]
+[robot_state_publisher-3] [INFO] [1792938217.489202426] [rclcpp]: signal_handler(signum=2)
+[move_group-4] [INFO] [1792938217.489227092] [rclcpp]: signal_handler(signum=2)
+[delivery_controller-10] Traceback (most recent call last):
+[delivery_controller-10]   File "/home/ubuntu/final_pj/final_project_ros/ros2_ws/build/final_project_ros/final_project_ros/delivery_controller.py", line 685, in main
+[delivery_controller-10]     rclpy.spin(node)
+[delivery_controller-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[delivery_controller-10]     executor.spin_once()
+[delivery_controller-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[delivery_controller-10]     self._spin_once_impl(timeout_sec)
+[delivery_controller-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[delivery_controller-10]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[delivery_controller-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[delivery_controller-10]     return next(self._cb_iter)
+[delivery_controller-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[delivery_controller-10]     wait_set.wait(timeout_nsec)
+[delivery_controller-10] KeyboardInterrupt
+[delivery_controller-10] 
+[delivery_controller-10] During handling of the above exception, another exception occurred:
+[delivery_controller-10] 
+[delivery_controller-10] Traceback (most recent call last):
+[delivery_controller-10]   File "/home/ubuntu/final_pj/final_project_ros/ros2_ws/install/final_project_ros/lib/final_project_ros/delivery_controller", line 33, in <module>
+[delivery_controller-10]     sys.exit(load_entry_point('final-project-ros', 'console_scripts', 'delivery_controller')())
+[delivery_controller-10]   File "/home/ubuntu/final_pj/final_project_ros/ros2_ws/build/final_project_ros/final_project_ros/delivery_controller.py", line 687, in main
+[delivery_controller-10]     node.destroy_node()
+[delivery_controller-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1679, in destroy_node
+[delivery_controller-10]     self.destroy_publisher(self._publishers[0])
+[delivery_controller-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1559, in destroy_publisher
+[delivery_controller-10]     publisher.destroy()
+[delivery_controller-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/publisher.py", line 93, in destroy
+[robot_state_publisher-3] [INFO] [1792938217.498400139] [rclcpp]: signal_handler(signum=2)
+[delivery_controller-10]     self.__publisher.destroy_when_not_in_use()
+[delivery_controller-10] KeyboardInterrupt
+[gazebo_delivery_demo-9] Traceback (most recent call last):
+[gazebo_delivery_demo-9]   File "/home/ubuntu/final_pj/final_project_ros/ros2_ws/build/final_project_ros/final_project_ros/gazebo_delivery_demo.py", line 154, in main
+[gazebo_delivery_demo-9]     rclpy.spin(node)
+[gazebo_delivery_demo-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 226, in spin
+[gazebo_delivery_demo-9]     executor.spin_once()
+[gazebo_delivery_demo-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[gazebo_delivery_demo-9]     self._spin_once_impl(timeout_sec)
+[gazebo_delivery_demo-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[gazebo_delivery_demo-9]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[gazebo_delivery_demo-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[gazebo_delivery_demo-9]     return next(self._cb_iter)
+[gazebo_delivery_demo-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[gazebo_delivery_demo-9]     wait_set.wait(timeout_nsec)
+[gazebo_delivery_demo-9] KeyboardInterrupt
+[gazebo_delivery_demo-9] 
+[gazebo_delivery_demo-9] During handling of the above exception, another exception occurred:
+[gazebo_delivery_demo-9] 
+[gazebo_delivery_demo-9] Traceback (most recent call last):
+[gazebo_delivery_demo-9]   File "/home/ubuntu/final_pj/final_project_ros/ros2_ws/install/final_project_ros/lib/final_project_ros/gazebo_delivery_demo", line 33, in <module>
+[gazebo_delivery_demo-9]     sys.exit(load_entry_point('final-project-ros', 'console_scripts', 'gazebo_delivery_demo')())
+[gazebo_delivery_demo-9]   File "/home/ubuntu/final_pj/final_project_ros/ros2_ws/build/final_project_ros/final_project_ros/gazebo_delivery_demo.py", line 156, in main
+[gazebo_delivery_demo-9]     node.destroy_node()
+[gazebo_delivery_demo-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1681, in destroy_node
+[gazebo_delivery_demo-9]     self.destroy_subscription(self._subscriptions[0])
+[gazebo_delivery_demo-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1577, in destroy_subscription
+[gazebo_delivery_demo-9]     subscription.destroy()
+[gazebo_delivery_demo-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/subscription.py", line 80, in destroy
+[gazebo_delivery_demo-9]     self.handle.destroy_when_not_in_use()
+[gazebo_delivery_demo-9] KeyboardInterrupt
+[ERROR] [move_group-4]: process has died [pid 76019, exit code -2, cmd '/opt/ros/humble/lib/moveit_ros_move_group/move_group --ros-args -r __node:=move_group --params-file /tmp/launch_params_6vbr3ytj'].
+[move_group-4] [0m
+[ERROR] [gazebo_delivery_demo-9]: process has died [pid 76384, exit code -2, cmd '/home/ubuntu/final_pj/final_project_ros/ros2_ws/install/final_project_ros/lib/final_project_ros/gazebo_delivery_demo --ros-args -r __node:=gazebo_delivery_demo --params-file /tmp/launch_params_ony7yfl7'].
+[ERROR] [delivery_controller-10]: process has died [pid 76386, exit code -2, cmd '/home/ubuntu/final_pj/final_project_ros/ros2_ws/install/final_project_ros/lib/final_project_ros/delivery_controller --ros-args -r __node:=delivery_controller --params-file /tmp/launch_params_1ihhzuyq'].
+[INFO] [robot_state_publisher-3]: process has finished cleanly [pid 76017]
+[INFO] [gzserver-2]: process has finished cleanly [pid 76015]
+[gzserver-2] [0m[1;32m[0m[1;32m[0m[1;36m[0m[1;32m[0m
+[gzserver-2] [1;33m[0m[1;31m[0m

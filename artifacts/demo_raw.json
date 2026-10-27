@@ -1,0 +1,62 @@
+{
+  "events": [
+    {
+      "wall_seconds": 3.8712431980002293,
+      "state": "initializing"
+    },
+    {
+      "wall_seconds": 3.892360211000778,
+      "state": "homing"
+    },
+    {
+      "wall_seconds": 6.957581858000594,
+      "state": "waiting_for_object"
+    },
+    {
+      "wall_seconds": 7.054754591000346,
+      "state": "target_detected"
+    },
+    {
+      "wall_seconds": 7.155693978000272,
+      "state": "approaching_target"
+    },
+    {
+      "wall_seconds": 10.37442179700065,
+      "state": "grasping"
+    },
+    {
+      "wall_seconds": 12.885665540000446,
+      "state": "closing_gripper"
+    },
+    {
+      "wall_seconds": 14.004326981000304,
+      "state": "lifting"
+    },
+    {
+      "wall_seconds": 15.906164560999969,
+      "state": "placing_in_box"
+    },
+    {
+      "wall_seconds": 37.41963170800045,
+      "state": "releasing"
+    },
+    {
+      "wall_seconds": 40.1361712780008,
+      "state": "done"
+    }
+  ],
+  "final_state": "done",
+  "final_model_positions": {
+    "target_blue_00": [
+      0.1,
+      -0.19,
+      0.15
+    ],
+    "distractor_red": [
+      0.34,
+      0.0,
+      0.12
+    ]
+  },
+  "wall_seconds": 44.218503749000774
+}

@@ -1,0 +1,29 @@
+{
+  "algorithm": "CEM residual policy search",
+  "parameter_names": [
+    "radial_offset_m",
+    "lateral_offset_m",
+    "wrist_height_m",
+    "pitch_rad",
+    "close_rad",
+    "move_s",
+    "close_s",
+    "lift_s"
+  ],
+  "parameters": [
+    0.004612019098184865,
+    0.01091884938209813,
+    0.14246387617836004,
+    3.1844083604646243,
+    -0.4032554696894187,
+    0.7174873502823556,
+    0.3,
+    0.7
+  ],
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "seed": 42
+}
