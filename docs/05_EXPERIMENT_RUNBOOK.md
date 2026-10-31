@@ -1,6 +1,6 @@
 # 05 再現・再学習・比較実験の手順
 
-現在の提出デモの起動は`DELIVERY_MODE=sorting ./run_demo.sh gui:=false`です。[07](07_CONVEYOR_SORTING.md)に選別の証跡と再現手順があります。以下の無指定起動や4条件の集計は単一箱モードです。
+現在の提出デモの起動は`DELIVERY_MODE=sorting ./run_demo.sh gui:=false`です。[07](07_CONVEYOR_SORTING.md)に選別の証跡と再現手順があります。以下の実験例はphysicalを明示した単一箱モードです。4条件の集計も単一箱配送を対象にします。
 
 以下のコマンドの作業ディレクトリは`/home/ubuntu/final_pj/final_project_ros`です。新しい結果を作る前に、基準のコード・設定・結果を保管します。標準の学習・検証スクリプトは上書きを行うため、実験ごとのコピーを推奨します。
 
@@ -66,7 +66,7 @@ mkdir -p experiments/adoption_01
 cp physics_grasp/results/policy.json experiments/adoption_01/previous_policy.json
 cp experiments/grasp_trial_01/physics_grasp/results/policy.json \
    physics_grasp/results/policy.json
-./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/adoption_01.json"
+DELIVERY_MODE=physical ./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/adoption_01.json"
 ```
 
 起動時に生成スクリプトがROS側の`models/learned_grasp_policy.json`へコピーします。ROS側のコピーだけを編集すると次回起動で戻ります。
@@ -78,9 +78,9 @@ cp experiments/grasp_trial_01/physics_grasp/results/policy.json \
 標準結果を壊さない出力名を使います。
 
 ```bash
-./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/trial_new_01.json"
+DELIVERY_MODE=physical ./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/trial_new_01.json"
 PHYSICAL_SEED=2000 PHYSICAL_MASS=.03 PHYSICAL_FRICTION=1.0 \
-  ./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/seed2000_new.json"
+  DELIVERY_MODE=physical ./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/seed2000_new.json"
 ```
 
 環境変数の設定は先頭に付けたコマンド1回に適用します。シェルへexportしている場合、以降の試行にも残る点に注意します。`physical_scene.json`と試行JSONの`scene`で実際に使った値を確認します。
@@ -178,4 +178,4 @@ python3 tools/build_development_docs.py
 python3 tools/prepare_submission.py
 ```
 
-最初は証拠索引、次は詳細資料PDF、最後は短い提出用PDF・説明付き動画・ソースZIPの生成です。`prepare_submission.py`はFINAL_REPORT.mdを作り直しますが、手書きの詳細資料は別に残ります。物理配送の`delivery.json`が失敗なら、古いキネマティックの成功を代用せず停止します。書きかけや古い出力が残る可能性があるため、コマンドが正常終了したか確認してください。
+最初は証拠索引、次は詳細資料PDF、最後は短い提出用PDF・説明付き動画・ソースZIPの生成です。`prepare_submission.py`は有効な選別証跡があれば`prepare_sorting_submission.py`を通じて選別レポートを、そうでなければ既存モードに応じたレポートを作り直します。手書きの詳細資料は別に残ります。失敗した証跡を成功結果へ置き換えず停止します。書きかけや古い出力が残る可能性があるため、コマンドが正常終了したか確認してください。

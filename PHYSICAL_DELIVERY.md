@@ -14,9 +14,9 @@ DELIVERY_MODE=sorting ./run_demo.sh gui:=false
 
 `artifacts/conveyor_sorting/episode.json`に箱ごとの判定色・正解色・行き先・投入検証を保存し、同名の動画と画像も保存します。4箱で自動終了します。投入位置は箱内の2箇所に分けます。この専用配置での4箱のデモであり、無限供給や任意個数への対応ではありません。判定・把持・投入の失敗時には停止します。
 
-解放時は箱の床接触と指が離れたことを確認し、実測した関節姿勢から真上への退避を計算します。指を開いた際の接触で腕の姿勢が目標からずれた場合も、実測姿勢を退避の始点にします。開発中の滑りと解放時の干渉の失敗記録も保存しています。
+解放時は箱の最近の床接触と両指保持の解除、部分開放角への到達を確認し、実測した関節姿勢から真上への退避を計算します。指を開いた際の接触で腕の姿勢が目標からずれた場合も、実測姿勢を退避の始点にします。開発中の滑りと解放時の干渉の失敗記録も保存しています。
 
-2026-10-27の最終版のGazebo実行では、約181秒で青・赤・緑・青の4箱の色判定・投入に成功し、終了時の全箱の保持も確認しました。結果は`artifacts/conveyor_sorting/episode.json`に保存しています。最終版の通し検証は1試行であり、成功率の評価ではありません。画像分類・実測姿勢からの退避・失敗した証跡の拒否を含むユニットテスト16件も通過しています。
+最終版の通し実行1試行で、青・赤・緑・青の4箱すべての色判定・投入が成功しました。実行時間は181.2秒、録画のシミュレーション時間は171.9秒です。終了時の保持確認は各箱の過去の床接触確認と最終姿勢を組み合わせたもので、全箱の同時の床接触や角速度を再測定した判定ではありません。記録は`artifacts/conveyor_sorting/episode.json`に保存しています。この4箱は独立4試行の成功率ではなく、最終版の多数回反復による成功率は未評価です。画像分類・実測姿勢からの退避・失敗した証跡の拒否を含むユニットテスト16件も通過しています。
 
 以下は従来の単一箱デモについての説明です。
 
@@ -24,9 +24,9 @@ DELIVERY_MODE=sorting ./run_demo.sh gui:=false
 
 ```bash
 cd /home/ubuntu/final_pj/final_project_ros
-./run_demo.sh gui:=false
+DELIVERY_MODE=physical ./run_demo.sh gui:=false
 # GUIも表示する場合（有効なDISPLAYが必要）
-./run_demo.sh gui:=true
+DELIVERY_MODE=physical ./run_demo.sh gui:=true
 ```
 
 認識・関節制御の起動後に自動で実行し、成功／失敗の記録を保存してGazeboを終了します。成功の確認まで含めてコマンドが終了し、失敗時は非ゼロの終了コードを返します。`gui:=false`でもカメラのレンダリング用X環境は必要です。
@@ -34,7 +34,7 @@ cd /home/ubuntu/final_pj/final_project_ros
 保存先：`artifacts/physical_delivery/episode.json`、同名の`.mp4`と`.png`。保存先を変える場合：
 
 ```bash
-./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/my_run.json"
+DELIVERY_MODE=physical ./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/my_run.json"
 ```
 
 詳細な設計理由・失敗と調整・再学習と比較実験は[開発・学習ドキュメント](docs/README.md)を参照してください。
@@ -45,7 +45,7 @@ cd /home/ubuntu/final_pj/final_project_ros
 2. 両指の接触をGazeboの接触センサーで確認し、箱を持ち上げて1秒保持すること。
 3. 配送箱へ運搬中も、箱の高さと両指の接触を維持すること。
 4. 箱を離せる幅まで指を開き、実際の指メッシュの下端から必要な上昇量を計算して姿勢を保って真上へ退避し、配送箱の壁より上で指を全開にすること。その後、箱の8頂点すべてが配送箱の内側に収まること。
-5. 箱の底面が配送箱の床の高さにあり、床との接触が検出され、並進速度が0.02m/s未満、角速度が0.1rad/s未満であること。
+5. 箱の底面が配送箱の床の高さにあり、床との接触が検出され、並進速度が0.02m/s未満、角速度が0.1rad/s以下であること。
 6. 赤い誤選別物体の移動が5mm以内であること。
 
 座標や関節値だけで掴めたとみなさず、両指との接触を用います。把持で指が物体に阻まれて目標角へ到達しなくても、それ自体はエラーにしません。運搬へ移る際も閉じ指令を保持し、握力の目標を途切れさせないようにしています。アームの区間始点も直前の目標を引き継ぎ、指令の切り替えで保持力が弱まることを避けます。関節が追従できない場合、把持・運搬に失敗した場合、配置を確認できない場合は停止します。
@@ -62,9 +62,9 @@ Gazeboでは、同じCRANE+ URDFの形状・関節構造を使い、トルク上
 
 ```bash
 PHYSICAL_SEED=1000 PHYSICAL_MASS=.02 PHYSICAL_FRICTION=.7 \
-  ./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/seed1000.json"
+  DELIVERY_MODE=physical ./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/seed1000.json"
 # 指を開いたままの負の対照。把持できず停止するのが期待結果です。
-./run_demo.sh gui:=false disable_grip:=true \
+DELIVERY_MODE=physical ./run_demo.sh gui:=false disable_grip:=true \
   output:="$PWD/artifacts/physical_delivery/open_gripper.json"
 ```
 

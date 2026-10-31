@@ -18,7 +18,7 @@ CEMの計算式、報酬、探索範囲、再学習の留意点は[学習の詳�
 
 詳細：`results/evaluation.json`、`results/video_episode.json`。学習結果：`results/policy.json`、`results/training.json`。
 
-この30件での成功率は、任意配置での成功率を保証する値ではありません。
+この30件はCEMの学習seedとは異なりますが、開発中にも参照した条件であり、全開発工程から隔離した未知テストセットではありません。任意配置での成功率を保証する値ではありません。
 
 ## 学習しているもの
 

@@ -7,13 +7,14 @@
 
 # 開発・学習ドキュメント
 
-更新日：2026-10-27（日本時間）。現在の提出デモはコンベヤからの4箱の色選別です。まず[07 コンベヤ色選別](07_CONVEYOR_SORTING.md)を参照してください。01〜06は単一箱物理配送の基礎設計・学習・開発履歴を扱い、選別モードとの差分は07にまとめています。コード・保存済みJSON・実行ログを根拠に記載しています。**実測事実、原因の解釈、未検証の改善案を区別**しています。
+更新日：2026-10-31（日本時間）。現在の提出デモはコンベヤからの4箱の色選別です。まず[07 コンベヤ色選別](07_CONVEYOR_SORTING.md)を参照してください。01〜06は単一箱物理配送の基礎設計・学習・開発履歴を扱い、選別モードとの差分は07にまとめています。コード・保存済みJSON・実行ログを根拠に記載しています。**実測事実、原因の解釈、未検証の改善案を区別**しています。
 
 ## 目的別の読み方
 
 |目的|読む文書|
 |---|---|
-|全体像とコードの対応を理解する|[01 システム設計](01_SYSTEM_DESIGN.md)|
+|現在の4箱選別を起動・理解する|[07 コンベヤ色選別](07_CONVEYOR_SORTING.md)|
+|単一箱配送の全体像とコードの対応を理解する|[01 システム設計](01_SYSTEM_DESIGN.md)|
 |把持学習を理解・再学習する|[02 学習の仕組み](02_GRASP_LEARNING.md)|
 |失敗から調整の考え方を学ぶ|[03 開発・失敗記録](03_DEVELOPMENT_HISTORY.md)|
 |数値を変える箇所と副作用を確認する|[04 パラメータ一覧](04_PARAMETER_REFERENCE.md)|
@@ -25,11 +26,11 @@
 
 ## 現在の提出デモ
 
-青・赤・緑・青を1箱ずつ供給し、画像分類後に青を配送箱、それ以外を反対側の回収箱へ投入します。最終版の通し実行1試行で4箱の処理と終了時保持を確認しました（約181秒）。ROS側テスト16件が通過しています。コンベヤは供給中のみ位置設定による模擬搬送で、停止後は物理把持です。
+青・赤・緑・青を1箱ずつ供給し、画像分類後に青を配送箱、それ以外を反対側の回収箱へ投入します。最終版の通し実行1試行で4箱すべての色判定・投入に成功しました。実行時間は181.2秒、録画のシミュレーション時間は171.9秒です。この4箱は独立4試行の成功率ではなく、多数回反復による成功率は未評価です。終了時の保持確認は各箱の過去の床接触確認と最終姿勢に基づきます。ROS側テスト16件が通過しています。コンベヤは供給中のみ位置設定による模擬搬送で、停止後は物理把持です。
 
 ## 単一箱配送の保存済み検証（過去の基準）
 
-青い4cm立方体1個を、接触・摩擦で把持し、持ち上げ、黄色の配送箱へ運搬し、解放・退避して箱内での静止を確認します。色分類と把持の補正値は学習済みです。配送の状態機械・逆運動学・補間・到達確認は通常の制御コードです。
+青い4cm立方体1個を、接触・摩擦で把持し、持ち上げ、黄色の配送箱へ運搬し、解放・退避して箱内での静止を確認します。色分類と把持の補正値は学習済みです。配送のステートマシン・逆運動学・補間・到達確認は通常の制御コードです。
 
 - MuJoCo把持単体：保存済み評価30件で30件成功。初期方策0件、開いた指の対照0件。
 - 最終版Gazebo配送：標準配置と3条件、計4件で4件成功。開いた指の対照は把持で停止。
@@ -39,7 +40,7 @@
 
 ## 記録の扱い
 
-`../FINAL_REPORT.md`と提出用PDFは短い成果説明です。本ディレクトリは開発・学習用の詳細資料です。`tools/prepare_submission.py`が短いレポートを再生成しても、この詳細資料は上書きしません。
+`../FINAL_REPORT.md`と提出用PDFは短い成果説明です。本ディレクトリは開発・学習用の詳細資料です。選別証跡がある場合、`tools/prepare_submission.py`は`tools/prepare_sorting_submission.py`を通じて`FINAL_REPORT.md`、提出用PDFと動画を再生成します。この詳細資料は上書きしません。
 
 証拠索引は`tools/document_experiments.py`で更新できます。参照用のコード・設定・結果は`evidence/reference_snapshot/`に保存し、SHA-256で照合できるようにしています。reference_snapshotは旧単一箱版の控えです。現在版のソースは提出ZIPを参照します。スナップショットは主要ソースと記録の控えであり、ROSや全依存ライブラリを含むコンテナイメージではありません。
 
@@ -48,7 +49,7 @@
 
 # 07 コンベヤ色選別：現在の提出デモ
 
-更新日：2026-10-27（日本時間）。現在の提出物は青・赤・緑・青の4箱を処理する選別デモです。01〜06の単一箱配送の設計・検証は、その基礎と開発履歴として読みます。
+更新日：2026-10-31（日本時間）。現在の提出物は青・赤・緑・青の4箱を処理する選別デモです。01〜06の単一箱配送の設計・検証は、その基礎と開発履歴として読みます。
 
 ## 起動と提出物の再生成
 
@@ -117,7 +118,7 @@ ROSモジュールはros2_ws/src/final_project_ros/final_project_ros/にあり�
 
 単一箱制御の両指接触・持ち上げ・1秒保持・縁の高さ確保・運搬を再利用します。投入先はself.trayで切り替えます。
 
-解放後は箱の床接触が.2秒以内、両指保持が解除、指の部分開放角-.15radとの誤差が.05rad以内であることを確認します。実測関節値から指の最低点を求め、max(.012,.108-bottom)mの真上への退避を計画します。この区間だけは解放後の実測姿勢を指令始点にします。把持・運搬中は閉じ指令を引き継ぎます。全開前には全開形状で最低点z≥.1mを確認します。
+解放後は箱の床接触が.2秒以内、両指の最近の接触がそろわない状態（bilateral()がfalse）、指の部分開放角-.15radとの誤差が.05rad以内であることを確認します。実測関節値から指の最低点を求め、max(.012,.108-bottom)mの真上への退避を計画します。この区間だけは解放後の実測姿勢を指令始点にします。把持・運搬中は閉じ指令を引き継ぎます。全開前には全開形状で最低点z≥.1mを確認します。
 
 箱ごとの配置判定は単一箱と同じ箱8頂点・床高さ・並進速度・角速度・最近の床接触です。回収箱のy座標を-.25m平行移動し、同じ幾何判定を使います。旧デモの「赤を動かさない」条件は適用せず、赤と緑も回収します。
 
@@ -125,7 +126,7 @@ ROSモジュールはros2_ws/src/final_project_ros/final_project_ros/にあり�
 
 ## 実測・失敗と制約
 
-最終版の通し実行1試行で4箱の判定・投入に成功し、全箱の終了時保持も確認しました。実時間は約181秒です。4箱を独立4試行として扱いません。ユニットテスト16件が通過しています。
+最終版の通し実行1試行で4箱すべての色判定・投入が成功しました。記録されたwall_secondsは181.2秒、録画のシミュレーション時間は171.9秒です。選別のwall_secondsは選別ノード初期化から動画エンコードを含む保存処理後までで、ビルド・Gazebo起動は含みません。終了時の保持確認は各箱の過去の床接触確認と最終姿勢に基づき、全箱の同時の床接触や角速度を再測定したものではありません。この4箱は独立4試行の成功率ではなく、最終版の多数回反復による成功率は未評価です。ユニットテスト16件が通過しています。
 
 - 成功証跡：[episode.json](../artifacts/conveyor_sorting/episode.json)、[動画](../artifacts/conveyor_sorting/episode.mp4)、[終了画像](../artifacts/conveyor_sorting/episode.png)、[ログ](../artifacts/conveyor_sorting/episode.log)。
 - 解放時の関節追従停止：[release_interference.json](../artifacts/conveyor_sorting/release_interference.json)。実測姿勢からの退避を追加しました。
@@ -235,7 +236,7 @@ launchはGazeboとrobot_state_publisherを起動し、ロボット生成後にjo
 
 上方カメラは位置`[0.55,0.15,1.4]`、画像640×480、水平画角1.3962634radです。制御側はこの値を直接使って投影します。`fx=fy=640/(2*tan(fov/2))`、`depth=1.4-z`、`u=320-fx*(y-.15)/depth`、`v=240-fy*(x-.55)/depth`です。検出と投影の差18pixel未満で検出時刻を更新し、1秒以内の検出を開始条件にします。カメラを変える場合はワールドと`on_detection()`の両方を更新する必要があります。
 
-## 6. 状態機械
+## 6. ステートマシン
 
 ```mermaid
 stateDiagram-v2
@@ -710,7 +711,7 @@ wall時間の確認自体はシミュレーション時間のROSタイマー内�
 
 # 05 再現・再学習・比較実験の手順
 
-現在の提出デモの起動は`DELIVERY_MODE=sorting ./run_demo.sh gui:=false`です。[07](07_CONVEYOR_SORTING.md)に選別の証跡と再現手順があります。以下の無指定起動や4条件の集計は単一箱モードです。
+現在の提出デモの起動は`DELIVERY_MODE=sorting ./run_demo.sh gui:=false`です。[07](07_CONVEYOR_SORTING.md)に選別の証跡と再現手順があります。以下の実験例はphysicalを明示した単一箱モードです。4条件の集計も単一箱配送を対象にします。
 
 以下のコマンドの作業ディレクトリは`/home/ubuntu/final_pj/final_project_ros`です。新しい結果を作る前に、基準のコード・設定・結果を保管します。標準の学習・検証スクリプトは上書きを行うため、実験ごとのコピーを推奨します。
 
@@ -776,7 +777,7 @@ mkdir -p experiments/adoption_01
 cp physics_grasp/results/policy.json experiments/adoption_01/previous_policy.json
 cp experiments/grasp_trial_01/physics_grasp/results/policy.json \
    physics_grasp/results/policy.json
-./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/adoption_01.json"
+DELIVERY_MODE=physical ./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/adoption_01.json"
 ```
 
 起動時に生成スクリプトがROS側の`models/learned_grasp_policy.json`へコピーします。ROS側のコピーだけを編集すると次回起動で戻ります。
@@ -788,9 +789,9 @@ cp experiments/grasp_trial_01/physics_grasp/results/policy.json \
 標準結果を壊さない出力名を使います。
 
 ```bash
-./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/trial_new_01.json"
+DELIVERY_MODE=physical ./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/trial_new_01.json"
 PHYSICAL_SEED=2000 PHYSICAL_MASS=.03 PHYSICAL_FRICTION=1.0 \
-  ./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/seed2000_new.json"
+  DELIVERY_MODE=physical ./run_demo.sh gui:=false output:="$PWD/artifacts/physical_delivery/seed2000_new.json"
 ```
 
 環境変数の設定は先頭に付けたコマンド1回に適用します。シェルへexportしている場合、以降の試行にも残る点に注意します。`physical_scene.json`と試行JSONの`scene`で実際に使った値を確認します。
@@ -888,7 +889,7 @@ python3 tools/build_development_docs.py
 python3 tools/prepare_submission.py
 ```
 
-最初は証拠索引、次は詳細資料PDF、最後は短い提出用PDF・説明付き動画・ソースZIPの生成です。`prepare_submission.py`はFINAL_REPORT.mdを作り直しますが、手書きの詳細資料は別に残ります。物理配送の`delivery.json`が失敗なら、古いキネマティックの成功を代用せず停止します。書きかけや古い出力が残る可能性があるため、コマンドが正常終了したか確認してください。
+最初は証拠索引、次は詳細資料PDF、最後は短い提出用PDF・説明付き動画・ソースZIPの生成です。`prepare_submission.py`は有効な選別証跡があれば`prepare_sorting_submission.py`を通じて選別レポートを、そうでなければ既存モードに応じたレポートを作り直します。手書きの詳細資料は別に残ります。失敗した証跡を成功結果へ置き換えず停止します。書きかけや古い出力が残る可能性があるため、コマンドが正常終了したか確認してください。
 
 
 <!-- source: 06_IMPROVEMENT_ROADMAP.md -->
@@ -1000,7 +1001,7 @@ MoveIt等へ経路計画を移す場合も、把持対象と手先の関係、�
 - 行動：目標角、速度、トルクのどれを扱うか。
 - リセット：失敗後に安全で再現可能な初期状態へ戻せるか。
 - 報酬と終了：配送成功、落下、衝突、時間切れの定義。
-- 基準：今回のCEM＋状態機械を維持し、同じ条件で比較。
+- 基準：今回のCEM＋ステートマシンを維持し、同じ条件で比較。
 - 収集データ：成功だけでなく失敗、物理設定、コード版を含める。
 
 大きいモデルへ変えること自体が目的ではありません。改善したい失敗を明確にし、その失敗が減ったことを評価できる構成を先に作ります。
@@ -1084,32 +1085,32 @@ MoveIt等へ経路計画を移す場合も、把持対象と手先の関係、�
 
 既存ファイルから自動生成。表の順序はファイルパス順で、実行時刻順ではありません。上書きされた試行は復元しません。
 
-現在の提出デモは[4箱の色選別](../../artifacts/conveyor_sorting/episode.json)です。最終版の通し検証1試行内で4箱を処理しました。旧単一箱配送の[4条件の集計](../../artifacts/physical_delivery/verification.json)とは合算しません。
+現在の提出デモは[4箱の色選別](../artifacts/conveyor_sorting/episode.json)です。最終版の通し検証1試行内で4箱を処理しました。旧単一箱配送の[4条件の集計](../artifacts/physical_delivery/verification.json)とは合算しません。
 
 ## 配送の保存記録
 
 |JSON|最終状態|最後の理由|最終工程マーカー|画像・動画|
 |---|---|---|---|---|
-|[artifacts/conveyor_sorting/episode.json](../../artifacts/conveyor_sorting/episode.json)|done|—|両工程あり|[mp4](../../artifacts/conveyor_sorting/episode.mp4) / [png](../../artifacts/conveyor_sorting/episode.png)|
-|[artifacts/conveyor_sorting/lift_slip.json](../../artifacts/conveyor_sorting/lift_slip.json)|error|lift_not_confirmed|旧工程／把持前停止||
-|[artifacts/conveyor_sorting/release_interference.json](../../artifacts/conveyor_sorting/release_interference.json)|error|joint_tracking_timeout: 0.1274382050446654|両工程あり|[png](../../artifacts/conveyor_sorting/release_interference.png)|
-|[artifacts/physical_delivery/before_release_clearance_fix/delivery.json](../../artifacts/physical_delivery/before_release_clearance_fix/delivery.json)|done|—|旧工程／把持前停止|[mp4](../../artifacts/physical_delivery/before_release_clearance_fix/delivery.mp4) / [png](../../artifacts/physical_delivery/before_release_clearance_fix/delivery.png)|
-|[artifacts/physical_delivery/before_release_clearance_fix/seed1000.json](../../artifacts/physical_delivery/before_release_clearance_fix/seed1000.json)|done|—|旧工程／把持前停止|[mp4](../../artifacts/physical_delivery/before_release_clearance_fix/seed1000.mp4) / [png](../../artifacts/physical_delivery/before_release_clearance_fix/seed1000.png)|
-|[artifacts/physical_delivery/before_release_clearance_fix/seed1001.json](../../artifacts/physical_delivery/before_release_clearance_fix/seed1001.json)|error|joint_tracking_timeout: 0.28573426362410204|旧工程／把持前停止|[mp4](../../artifacts/physical_delivery/before_release_clearance_fix/seed1001.mp4) / [png](../../artifacts/physical_delivery/before_release_clearance_fix/seed1001.png)|
-|[artifacts/physical_delivery/delivery.json](../../artifacts/physical_delivery/delivery.json)|done|—|両工程あり|[mp4](../../artifacts/physical_delivery/delivery.mp4) / [png](../../artifacts/physical_delivery/delivery.png)|
-|[artifacts/physical_delivery/failed_repeat_before_carry_fix.json](../../artifacts/physical_delivery/failed_repeat_before_carry_fix.json)|error|object_dropped_in_transport|旧工程／把持前停止|[mp4](../../artifacts/physical_delivery/failed_repeat_before_carry_fix.mp4) / [png](../../artifacts/physical_delivery/failed_repeat_before_carry_fix.png)|
-|[artifacts/physical_delivery/open_gripper.json](../../artifacts/physical_delivery/open_gripper.json)|error|no_bilateral_contact_at_grasp|旧工程／把持前停止|[mp4](../../artifacts/physical_delivery/open_gripper.mp4) / [png](../../artifacts/physical_delivery/open_gripper.png)|
-|[artifacts/physical_delivery/pre_clearance_results/open_gripper.json](../../artifacts/physical_delivery/pre_clearance_results/open_gripper.json)|error|no_bilateral_contact_at_grasp|旧工程／把持前停止|[mp4](../../artifacts/physical_delivery/pre_clearance_results/open_gripper.mp4) / [png](../../artifacts/physical_delivery/pre_clearance_results/open_gripper.png)|
-|[artifacts/physical_delivery/pre_clearance_results/seed1000.json](../../artifacts/physical_delivery/pre_clearance_results/seed1000.json)|done|—|旧工程／把持前停止|[mp4](../../artifacts/physical_delivery/pre_clearance_results/seed1000.mp4) / [png](../../artifacts/physical_delivery/pre_clearance_results/seed1000.png)|
-|[artifacts/physical_delivery/pre_clearance_results/seed1001.json](../../artifacts/physical_delivery/pre_clearance_results/seed1001.json)|done|—|旧工程／把持前停止|[mp4](../../artifacts/physical_delivery/pre_clearance_results/seed1001.mp4) / [png](../../artifacts/physical_delivery/pre_clearance_results/seed1001.png)|
-|[artifacts/physical_delivery/pre_clearance_results/seed1002.json](../../artifacts/physical_delivery/pre_clearance_results/seed1002.json)|done|—|旧工程／把持前停止|[mp4](../../artifacts/physical_delivery/pre_clearance_results/seed1002.mp4) / [png](../../artifacts/physical_delivery/pre_clearance_results/seed1002.png)|
-|[artifacts/physical_delivery/seed1000.json](../../artifacts/physical_delivery/seed1000.json)|done|—|両工程あり|[mp4](../../artifacts/physical_delivery/seed1000.mp4) / [png](../../artifacts/physical_delivery/seed1000.png)|
-|[artifacts/physical_delivery/seed1001.json](../../artifacts/physical_delivery/seed1001.json)|done|—|両工程あり|[mp4](../../artifacts/physical_delivery/seed1001.mp4) / [png](../../artifacts/physical_delivery/seed1001.png)|
-|[artifacts/physical_delivery/seed1002.json](../../artifacts/physical_delivery/seed1002.json)|done|—|両工程あり|[mp4](../../artifacts/physical_delivery/seed1002.mp4) / [png](../../artifacts/physical_delivery/seed1002.png)|
-|[artifacts/physical_delivery/trial1.json](../../artifacts/physical_delivery/trial1.json)|error|joint_tracking_timeout: 1.7892321432495368|旧工程／把持前停止|[mp4](../../artifacts/physical_delivery/trial1.mp4) / [png](../../artifacts/physical_delivery/trial1.png)|
-|[artifacts/physical_delivery/trial2.json](../../artifacts/physical_delivery/trial2.json)|error|joint_tracking_timeout: 0.24080764685949474|旧工程／把持前停止|[mp4](../../artifacts/physical_delivery/trial2.mp4) / [png](../../artifacts/physical_delivery/trial2.png)|
-|[artifacts/physical_delivery/trial3.json](../../artifacts/physical_delivery/trial3.json)|error|object_dropped_in_transport|旧工程／把持前停止|[mp4](../../artifacts/physical_delivery/trial3.mp4) / [png](../../artifacts/physical_delivery/trial3.png)|
-|[artifacts/physical_delivery/trial4.json](../../artifacts/physical_delivery/trial4.json)|done|—|旧工程／把持前停止|[mp4](../../artifacts/physical_delivery/trial4.mp4) / [png](../../artifacts/physical_delivery/trial4.png)|
+|[artifacts/conveyor_sorting/episode.json](../artifacts/conveyor_sorting/episode.json)|done|—|両工程あり|[mp4](../artifacts/conveyor_sorting/episode.mp4) / [png](../artifacts/conveyor_sorting/episode.png)|
+|[artifacts/conveyor_sorting/lift_slip.json](../artifacts/conveyor_sorting/lift_slip.json)|error|lift_not_confirmed|旧工程／把持前停止||
+|[artifacts/conveyor_sorting/release_interference.json](../artifacts/conveyor_sorting/release_interference.json)|error|joint_tracking_timeout: 0.1274382050446654|両工程あり|[png](../artifacts/conveyor_sorting/release_interference.png)|
+|[artifacts/physical_delivery/before_release_clearance_fix/delivery.json](../artifacts/physical_delivery/before_release_clearance_fix/delivery.json)|done|—|旧工程／把持前停止|[mp4](../artifacts/physical_delivery/before_release_clearance_fix/delivery.mp4) / [png](../artifacts/physical_delivery/before_release_clearance_fix/delivery.png)|
+|[artifacts/physical_delivery/before_release_clearance_fix/seed1000.json](../artifacts/physical_delivery/before_release_clearance_fix/seed1000.json)|done|—|旧工程／把持前停止|[mp4](../artifacts/physical_delivery/before_release_clearance_fix/seed1000.mp4) / [png](../artifacts/physical_delivery/before_release_clearance_fix/seed1000.png)|
+|[artifacts/physical_delivery/before_release_clearance_fix/seed1001.json](../artifacts/physical_delivery/before_release_clearance_fix/seed1001.json)|error|joint_tracking_timeout: 0.28573426362410204|旧工程／把持前停止|[mp4](../artifacts/physical_delivery/before_release_clearance_fix/seed1001.mp4) / [png](../artifacts/physical_delivery/before_release_clearance_fix/seed1001.png)|
+|[artifacts/physical_delivery/delivery.json](../artifacts/physical_delivery/delivery.json)|done|—|両工程あり|[mp4](../artifacts/physical_delivery/delivery.mp4) / [png](../artifacts/physical_delivery/delivery.png)|
+|[artifacts/physical_delivery/failed_repeat_before_carry_fix.json](../artifacts/physical_delivery/failed_repeat_before_carry_fix.json)|error|object_dropped_in_transport|旧工程／把持前停止|[mp4](../artifacts/physical_delivery/failed_repeat_before_carry_fix.mp4) / [png](../artifacts/physical_delivery/failed_repeat_before_carry_fix.png)|
+|[artifacts/physical_delivery/open_gripper.json](../artifacts/physical_delivery/open_gripper.json)|error|no_bilateral_contact_at_grasp|旧工程／把持前停止|[mp4](../artifacts/physical_delivery/open_gripper.mp4) / [png](../artifacts/physical_delivery/open_gripper.png)|
+|[artifacts/physical_delivery/pre_clearance_results/open_gripper.json](../artifacts/physical_delivery/pre_clearance_results/open_gripper.json)|error|no_bilateral_contact_at_grasp|旧工程／把持前停止|[mp4](../artifacts/physical_delivery/pre_clearance_results/open_gripper.mp4) / [png](../artifacts/physical_delivery/pre_clearance_results/open_gripper.png)|
+|[artifacts/physical_delivery/pre_clearance_results/seed1000.json](../artifacts/physical_delivery/pre_clearance_results/seed1000.json)|done|—|旧工程／把持前停止|[mp4](../artifacts/physical_delivery/pre_clearance_results/seed1000.mp4) / [png](../artifacts/physical_delivery/pre_clearance_results/seed1000.png)|
+|[artifacts/physical_delivery/pre_clearance_results/seed1001.json](../artifacts/physical_delivery/pre_clearance_results/seed1001.json)|done|—|旧工程／把持前停止|[mp4](../artifacts/physical_delivery/pre_clearance_results/seed1001.mp4) / [png](../artifacts/physical_delivery/pre_clearance_results/seed1001.png)|
+|[artifacts/physical_delivery/pre_clearance_results/seed1002.json](../artifacts/physical_delivery/pre_clearance_results/seed1002.json)|done|—|旧工程／把持前停止|[mp4](../artifacts/physical_delivery/pre_clearance_results/seed1002.mp4) / [png](../artifacts/physical_delivery/pre_clearance_results/seed1002.png)|
+|[artifacts/physical_delivery/seed1000.json](../artifacts/physical_delivery/seed1000.json)|done|—|両工程あり|[mp4](../artifacts/physical_delivery/seed1000.mp4) / [png](../artifacts/physical_delivery/seed1000.png)|
+|[artifacts/physical_delivery/seed1001.json](../artifacts/physical_delivery/seed1001.json)|done|—|両工程あり|[mp4](../artifacts/physical_delivery/seed1001.mp4) / [png](../artifacts/physical_delivery/seed1001.png)|
+|[artifacts/physical_delivery/seed1002.json](../artifacts/physical_delivery/seed1002.json)|done|—|両工程あり|[mp4](../artifacts/physical_delivery/seed1002.mp4) / [png](../artifacts/physical_delivery/seed1002.png)|
+|[artifacts/physical_delivery/trial1.json](../artifacts/physical_delivery/trial1.json)|error|joint_tracking_timeout: 1.7892321432495368|旧工程／把持前停止|[mp4](../artifacts/physical_delivery/trial1.mp4) / [png](../artifacts/physical_delivery/trial1.png)|
+|[artifacts/physical_delivery/trial2.json](../artifacts/physical_delivery/trial2.json)|error|joint_tracking_timeout: 0.24080764685949474|旧工程／把持前停止|[mp4](../artifacts/physical_delivery/trial2.mp4) / [png](../artifacts/physical_delivery/trial2.png)|
+|[artifacts/physical_delivery/trial3.json](../artifacts/physical_delivery/trial3.json)|error|object_dropped_in_transport|旧工程／把持前停止|[mp4](../artifacts/physical_delivery/trial3.mp4) / [png](../artifacts/physical_delivery/trial3.png)|
+|[artifacts/physical_delivery/trial4.json](../artifacts/physical_delivery/trial4.json)|done|—|旧工程／把持前停止|[mp4](../artifacts/physical_delivery/trial4.mp4) / [png](../artifacts/physical_delivery/trial4.png)|
 
 マーカーは版を識別する補助で、ソースハッシュの代替ではありません。対照条件は把持前で停止するため、最終版でも後段のマーカーがありません。
 
@@ -1117,38 +1118,38 @@ MoveIt等へ経路計画を移す場合も、把持対象と手先の関係、�
 
 |保存先|世代数|best reward|学習方策の成功|評価JSON|
 |---|---:|---:|---|---|
-|physics_grasp/attempt1_results|15|0.124636|0/30|[評価](../../physics_grasp/attempt1_results/evaluation.json)|
-|physics_grasp/attempt2_results|16|-0.116270|0/30|[評価](../../physics_grasp/attempt2_results/evaluation.json)|
-|physics_grasp/attempt3_results|15|13.712930|30/30|[評価](../../physics_grasp/attempt3_results/evaluation.json)|
-|physics_grasp/results|8|13.546499|30/30|[評価](../../physics_grasp/results/evaluation.json)|
+|physics_grasp/attempt1_results|15|0.124636|0/30|[評価](../physics_grasp/attempt1_results/evaluation.json)|
+|physics_grasp/attempt2_results|16|-0.116270|0/30|[評価](../physics_grasp/attempt2_results/evaluation.json)|
+|physics_grasp/attempt3_results|15|13.712930|30/30|[評価](../physics_grasp/attempt3_results/evaluation.json)|
+|physics_grasp/results|8|13.546499|30/30|[評価](../physics_grasp/results/evaluation.json)|
 
 物理モデル・報酬・軌道制限が変更されているため、異なる版のrewardを直接比較しません。
 
 ## 実行ログ
 
-- [artifacts/conveyor_sorting/episode.log](../../artifacts/conveyor_sorting/episode.log)
-- [artifacts/conveyor_sorting/release_interference.log](../../artifacts/conveyor_sorting/release_interference.log)
-- [artifacts/physical_delivery/delivery.log](../../artifacts/physical_delivery/delivery.log)
-- [artifacts/physical_delivery/development_logs/grasp_training.log](../../artifacts/physical_delivery/development_logs/grasp_training.log)
-- [artifacts/physical_delivery/development_logs/grasp_training2.log](../../artifacts/physical_delivery/development_logs/grasp_training2.log)
-- [artifacts/physical_delivery/development_logs/grasp_training3.log](../../artifacts/physical_delivery/development_logs/grasp_training3.log)
-- [artifacts/physical_delivery/development_logs/grasp_training4.log](../../artifacts/physical_delivery/development_logs/grasp_training4.log)
-- [artifacts/physical_delivery/development_logs/physical_delivery1.log](../../artifacts/physical_delivery/development_logs/physical_delivery1.log)
-- [artifacts/physical_delivery/development_logs/physical_delivery2.log](../../artifacts/physical_delivery/development_logs/physical_delivery2.log)
-- [artifacts/physical_delivery/development_logs/physical_delivery3.log](../../artifacts/physical_delivery/development_logs/physical_delivery3.log)
-- [artifacts/physical_delivery/development_logs/physical_delivery4.log](../../artifacts/physical_delivery/development_logs/physical_delivery4.log)
-- [artifacts/physical_delivery/development_logs/physical_delivery_clearance.log](../../artifacts/physical_delivery/development_logs/physical_delivery_clearance.log)
-- [artifacts/physical_delivery/development_logs/physical_delivery_complete.log](../../artifacts/physical_delivery/development_logs/physical_delivery_complete.log)
-- [artifacts/physical_delivery/open_gripper.log](../../artifacts/physical_delivery/open_gripper.log)
-- [artifacts/physical_delivery/seed1000.log](../../artifacts/physical_delivery/seed1000.log)
-- [artifacts/physical_delivery/seed1001.log](../../artifacts/physical_delivery/seed1001.log)
-- [artifacts/physical_delivery/seed1002.log](../../artifacts/physical_delivery/seed1002.log)
-- [artifacts/physical_delivery/tests.log](../../artifacts/physical_delivery/tests.log)
+- [artifacts/conveyor_sorting/episode.log](../artifacts/conveyor_sorting/episode.log)
+- [artifacts/conveyor_sorting/release_interference.log](../artifacts/conveyor_sorting/release_interference.log)
+- [artifacts/physical_delivery/delivery.log](../artifacts/physical_delivery/delivery.log)
+- [artifacts/physical_delivery/development_logs/grasp_training.log](../artifacts/physical_delivery/development_logs/grasp_training.log)
+- [artifacts/physical_delivery/development_logs/grasp_training2.log](../artifacts/physical_delivery/development_logs/grasp_training2.log)
+- [artifacts/physical_delivery/development_logs/grasp_training3.log](../artifacts/physical_delivery/development_logs/grasp_training3.log)
+- [artifacts/physical_delivery/development_logs/grasp_training4.log](../artifacts/physical_delivery/development_logs/grasp_training4.log)
+- [artifacts/physical_delivery/development_logs/physical_delivery1.log](../artifacts/physical_delivery/development_logs/physical_delivery1.log)
+- [artifacts/physical_delivery/development_logs/physical_delivery2.log](../artifacts/physical_delivery/development_logs/physical_delivery2.log)
+- [artifacts/physical_delivery/development_logs/physical_delivery3.log](../artifacts/physical_delivery/development_logs/physical_delivery3.log)
+- [artifacts/physical_delivery/development_logs/physical_delivery4.log](../artifacts/physical_delivery/development_logs/physical_delivery4.log)
+- [artifacts/physical_delivery/development_logs/physical_delivery_clearance.log](../artifacts/physical_delivery/development_logs/physical_delivery_clearance.log)
+- [artifacts/physical_delivery/development_logs/physical_delivery_complete.log](../artifacts/physical_delivery/development_logs/physical_delivery_complete.log)
+- [artifacts/physical_delivery/open_gripper.log](../artifacts/physical_delivery/open_gripper.log)
+- [artifacts/physical_delivery/seed1000.log](../artifacts/physical_delivery/seed1000.log)
+- [artifacts/physical_delivery/seed1001.log](../artifacts/physical_delivery/seed1001.log)
+- [artifacts/physical_delivery/seed1002.log](../artifacts/physical_delivery/seed1002.log)
+- [artifacts/physical_delivery/tests.log](../artifacts/physical_delivery/tests.log)
 
 development_logsは、文書作成時点で残っていた一時ログを退避したものです。一時ログ名はソース版を保証せず、同じ名前で過去に上書きされた可能性があります。JSONとコードに照合して読みます。
 
 ## 参照スナップショット
 
-[manifest.json](reference_snapshot/manifest.json)は旧単一箱配送の参照用控えです。現在の選別ソースのスナップショットではありません。現在版は提出ソースZIPとsubmission/verification.jsonを参照します。
+[manifest.json](evidence/reference_snapshot/manifest.json)は旧単一箱配送の参照用控えです。現在の選別ソースのスナップショットではありません。現在版は提出ソースZIPとsubmission/verification.jsonを参照します。
 
-機械可読の索引：[catalog.json](catalog.json)。
+機械可読の索引：[catalog.json](evidence/catalog.json)。

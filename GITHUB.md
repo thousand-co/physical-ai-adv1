@@ -38,7 +38,7 @@ python3 tools/build_development_docs.py
 python3 tools/prepare_submission.py
 ```
 
-提出生成にはPillow、ReportLab、ffmpeg、日本語フォントNoto Sans CJKも必要です。把持の再学習をする場合だけphysics_grasp/requirements.txtの依存も導入します。環境観測の更新はpython3 tools/capture_environment.pyです。これは完全な依存ロックやインストール処理ではありません。
+提出生成にはPillow、ReportLab、ffmpeg、日本語フォントNoto Sans CJKも必要です。詳細ガイドの図生成にはGraphviz（`dot`）を使います。日本語PDFはTakao Pゴシックがあれば埋め込み、未導入の場合は従来のCIDフォントを使用します。把持の再学習をする場合だけphysics_grasp/requirements.txtの依存も導入します。環境観測の更新はpython3 tools/capture_environment.pyです。これは完全な依存ロックやインストール処理ではありません。
 
 ## 通常の更新
 

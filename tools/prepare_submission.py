@@ -79,7 +79,7 @@ report += '''
 README.mdの手順でROS/CRANE+環境をsourceし、run_demo.shを実行する。学習モデルの再生成はpython3 tools/train_color_model.py、テストと録画コマンドはREADME.mdを参照。動画は実際のGazeboカメラと関節値を記録したもので、アニメーションによる再現ではない。録画時の実時間で再生し、前後に説明画面を付加した。
 
 ## 使用技術・参考実装
-講義環境のCRANE+ description/control/MoveIt設定を使用。ROS 2 Humble、Gazebo Classic、MoveIt 2、ros2_control、OpenCVを利用した。独自実装はシーン設計、学習型色認識、検出とモデルの対応付け、配送状態機械、検証・録画・提出物生成である。依存パッケージの権利は各配布元に帰属する。課題要件はdocの10/19改訂版PDFを参照した。
+講義環境のCRANE+ description/control/MoveIt設定を使用。ROS 2 Humble、Gazebo Classic、MoveIt 2、ros2_control、OpenCVを利用した。独自実装はシーン設計、学習型色認識、検出とモデルの対応付け、配送ステートマシン、検証・録画・提出物生成である。依存パッケージの権利は各配布元に帰属する。課題要件はdocの10/19改訂版PDFを参照した。
 '''
 (ROOT/'FINAL_REPORT.md').write_text(report)
 (OUT/'report.md').write_text(report)
